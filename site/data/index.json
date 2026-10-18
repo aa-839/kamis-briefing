@@ -1,4 +1,12 @@
 {
-  "briefings": [],
-  "updated_at": null
+  "briefings": [
+    {
+      "date": "2026-10-16",
+      "headline": "양배추 16.9% 올랐고 시금치 13.9% 내린 장바구니 물가",
+      "verified": true,
+      "is_mock": false,
+      "file": "2026-10-16.json"
+    }
+  ],
+  "updated_at": "2026-10-18T15:55:36+09:00"
 }
