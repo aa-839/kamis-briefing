@@ -3,7 +3,7 @@
   "is_mock": false,
   "date": "2026-10-16",
   "survey_date": "2026-10-16",
-  "generated_at": "2026-10-18T15:55:36+09:00",
+  "generated_at": "2026-10-18T17:30:16+09:00",
   "headline": "양배추 16.9% 올랐고 시금치 13.9% 내린 장바구니 물가",
   "sections": {
     "rising": [
@@ -16,7 +16,16 @@
         "base_1w_date": "2026-10-08",
         "change_1y_pct": 22.2,
         "vs_normal_pct": 4.6,
-        "comment": "양배추는 10월 8일보다 16.9% 올랐고 1포기당 4,694원입니다."
+        "comment": "양배추는 10월 8일보다 16.9% 올랐고 1포기당 4,694원입니다.",
+        "cause": {
+          "summary": "산지 교체로 인한 공급 감소",
+          "quote": "양배추, 산지 교체 영향으로 공급 감소세…시세 강보합 전망",
+          "url": "https://www.nongmin.com/article/20261012500293",
+          "title": "[2026년 10월12일(월)] 무·양배추·고추·대파·열무 경락값 분석",
+          "publisher": "농민신문",
+          "published": "2026-10-12",
+          "grade": "인용문은 양배추 가격 상승의 원인으로 산지 교체에 따른 공급 감소를 명확히 제시하고 있어, 2026-10-08~2026-10-16 사이 양배추 소매가격 상승 원인을 설명하는 데 적절하다."
+        }
       },
       {
         "item": "고등어",
@@ -27,7 +36,8 @@
         "base_1w_date": "2026-10-08",
         "change_1y_pct": -0.2,
         "vs_normal_pct": 9.2,
-        "comment": "고등어는 10월 8일보다 11.6% 상승해 1마리에 4,554원입니다."
+        "comment": "고등어는 10월 8일보다 11.6% 상승해 1마리에 4,554원입니다.",
+        "cause": null
       },
       {
         "item": "양파",
@@ -38,7 +48,16 @@
         "base_1w_date": "2026-10-08",
         "change_1y_pct": -3.9,
         "vs_normal_pct": -0.6,
-        "comment": "양파는 10월 8일보다 7.6% 올랐으며 1kg에 2,214원입니다."
+        "comment": "양파는 10월 8일보다 7.6% 올랐으며 1kg에 2,214원입니다.",
+        "cause": {
+          "summary": "신선양파 수입량 감소",
+          "quote": "신선양파 수입량이 전년 대비 83% 감소하는 등 줄어든 수입 반입량을 국산이 일부 대체하면서, 국산 양파 반입량 증가에도 대과를 중심으로 가격이 상승한 것으로 풀이된다.",
+          "url": "http://www.ikpnews.net/news/articleView.html?idxno=71612",
+          "title": "내년 양파 공급 부족 우려…“재배면적 확대 필요” < 유통식품 < 뉴스 < 기사본문 - 한국농정신문",
+          "publisher": "한국농정신문",
+          "published": "2026-10-07",
+          "grade": "신선양파 수입량이 전년 대비 83% 감소하여 공급이 줄어든 점이 양파 소매가격 상승의 원인으로 적절하게 설명되고 있습니다."
+        }
       }
     ],
     "falling": [
@@ -51,7 +70,8 @@
         "base_1w_date": "2026-10-08",
         "change_1y_pct": -40.4,
         "vs_normal_pct": -32.4,
-        "comment": "시금치는 10월 8일보다 13.9% 내렸고 100g에 901원으로 지금 사기 좋습니다."
+        "comment": "시금치는 10월 8일보다 13.9% 내렸고 100g에 901원으로 지금 사기 좋습니다.",
+        "cause": null
       },
       {
         "item": "토마토",
@@ -62,7 +82,8 @@
         "base_1w_date": "2026-10-08",
         "change_1y_pct": -4.7,
         "vs_normal_pct": -21.9,
-        "comment": "토마토는 10월 8일보다 9.7% 하락해 1kg에 6,702원입니다."
+        "comment": "토마토는 10월 8일보다 9.7% 하락해 1kg에 6,702원입니다.",
+        "cause": null
       },
       {
         "item": "오이",
@@ -73,7 +94,8 @@
         "base_1w_date": "2026-10-08",
         "change_1y_pct": -39.5,
         "vs_normal_pct": -38.4,
-        "comment": "오이는 10월 8일보다 8.8% 내렸고 10개에 7,900원으로 구매 적기입니다."
+        "comment": "오이는 10월 8일보다 8.8% 내렸고 10개에 7,900원으로 가격이 저렴합니다.",
+        "cause": null
       }
     ],
     "vs_normal": {
@@ -141,7 +163,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -3.9,
       "vs_normal_pct": 15.2,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "감자",
@@ -152,7 +175,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -12.9,
       "vs_normal_pct": -6.4,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "고구마",
@@ -163,7 +187,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -5.3,
       "vs_normal_pct": -5.4,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "배추",
@@ -174,7 +199,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -10.3,
       "vs_normal_pct": -11.4,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "양배추",
@@ -185,7 +211,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": 22.2,
       "vs_normal_pct": 4.6,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "무",
@@ -196,7 +223,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -7.1,
       "vs_normal_pct": -19.7,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "대파",
@@ -207,7 +235,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -17.4,
       "vs_normal_pct": -16.9,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "양파",
@@ -218,7 +247,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -3.9,
       "vs_normal_pct": -0.6,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "깐마늘",
@@ -229,7 +259,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -10.5,
       "vs_normal_pct": -10.0,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "오이",
@@ -240,7 +271,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -39.5,
       "vs_normal_pct": -38.4,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "애호박",
@@ -251,7 +283,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -39.9,
       "vs_normal_pct": -33.7,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "시금치",
@@ -262,7 +295,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -40.4,
       "vs_normal_pct": -32.4,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "상추",
@@ -273,7 +307,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -41.7,
       "vs_normal_pct": -33.3,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "풋고추",
@@ -284,7 +319,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -18.4,
       "vs_normal_pct": -3.2,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "당근",
@@ -295,7 +331,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": 16.6,
       "vs_normal_pct": -9.9,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "토마토",
@@ -306,7 +343,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -4.7,
       "vs_normal_pct": -21.9,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "사과",
@@ -317,7 +355,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -27.2,
       "vs_normal_pct": -21.9,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "배(신고)",
@@ -328,7 +367,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -14.8,
       "vs_normal_pct": -12.5,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "감귤",
@@ -339,7 +379,8 @@
       "base_1w_date": null,
       "change_1y_pct": null,
       "vs_normal_pct": -9.8,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "바나나",
@@ -350,7 +391,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -4.4,
       "vs_normal_pct": 0.0,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "돼지 삼겹살",
@@ -361,7 +403,8 @@
       "base_1w_date": "2026-10-09",
       "change_1y_pct": -0.7,
       "vs_normal_pct": 4.9,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "계란(특란 30구)",
@@ -372,7 +415,8 @@
       "base_1w_date": "2026-10-09",
       "change_1y_pct": -2.5,
       "vs_normal_pct": 0.3,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "고등어",
@@ -383,7 +427,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -0.2,
       "vs_normal_pct": 9.2,
-      "comment": null
+      "comment": null,
+      "cause": null
     },
     {
       "item": "오징어",
@@ -394,7 +439,8 @@
       "base_1w_date": "2026-10-08",
       "change_1y_pct": -14.5,
       "vs_normal_pct": -2.5,
-      "comment": null
+      "comment": null,
+      "cause": null
     }
   ],
   "missing": [],
@@ -879,6 +925,56 @@
     "model": "openai:gpt-4.1-mini",
     "rewrites": 0,
     "fallback": false
+  },
+  "cause_search": {
+    "model": "openai:gpt-4.1-mini",
+    "searched": 6,
+    "found": 2,
+    "rejected": [
+      {
+        "item": "고등어",
+        "quote": "수입산 고등어는 올해 노르웨이의 고등어 어획 쿼터 감소 등으로 수입 가격이 크게 상승함에 따라 국민 장바구니 부담을 완화하기 위해 한시적으로 할인지원 대상에 포함했다",
+        "by": "check",
+        "reason": "품종은 국산인데 quote는 수입산 고등어 이야기"
+      },
+      {
+        "item": "고등어",
+        "quote": "대형선망은 고등어 등을 잡는 대표적인 근해어업이다.",
+        "by": "check",
+        "reason": "summary의 낱말 대부분이 quote에 없음(인용에 없는 원인을 덧붙임)"
+      },
+      {
+        "item": "고등어",
+        "quote": "대형선망은 고등어 등을 잡는 대표적인 근해어업이다.",
+        "by": "grade",
+        "reason": "인용문은 대형선망 어업에 대한 설명으로, 고등어 가격 상승의 원인과 직접적인 관련이 없습니다. 고등어 가격 상승 원인을 설명하는 구체적인 내용이나 시기적 연관성이 부족하여 적절하지 않습니다."
+      },
+      {
+        "item": "고등어",
+        "quote": "대형선망은 고등어 등을 잡는 대표적인 근해어업이다. 물고기를 포획하는 본선 1척과 불빛으로 물고기를 유인하는 등선 2척, 어획물을 항구로 옮기는 운반선 3척 등 총 6척이 하나의 선단을 이뤄 조업한다.",
+        "by": "grade",
+        "reason": "인용문은 고등어 대형선망 어업의 구조에 대해 설명하고 있으나, 2026-10-08~2026-10-16 사이 고등어 소매가격 상승의 원인을 직접적으로 설명하지 않고 있습니다. 따라서 가격 상승 원인으로 적절하지 않습니다."
+      },
+      {
+        "item": "토마토",
+        "quote": "이달 말에서 다음 달엔 충청과 호남 지역으로 출하 산지가 확대되며 공급량이 늘어날 예정으로 당분간 시세 약세가 이어질 전망이다.",
+        "by": "check",
+        "reason": "quote와 기사 제목에 '토마토'가 없음(다른 품목 이야기일 수 있음, 예: 방울토마토)"
+      },
+      {
+        "item": "오이",
+        "quote": "가격도 민감하게 움직였다. 이달 10일 가락시장 시범휴업 이후 12일 상추 경락가격은 직전 주 평균보다 11.5%, 백다다기 오이는 22.8% 낮아졌다. 오이 반입량은 휴업일 전후 87.4% 늘었다.",
+        "by": "check",
+        "reason": "summary의 낱말 대부분이 quote에 없음(인용에 없는 원인을 덧붙임)"
+      },
+      {
+        "item": "오이",
+        "quote": "가격도 민감하게 움직였다. 이달 10일 가락시장 시범휴업 이후 12일 상추 경락가격은 직전 주 평균보다 11.5%, 백다다기 오이는 22.8% 낮아졌다. 오이 반입량은 휴업일 전후 87.4% 늘었다.",
+        "by": "check",
+        "reason": "summary의 낱말 대부분이 quote에 없음(인용에 없는 원인을 덧붙임)"
+      }
+    ],
+    "errors": []
   },
   "source": "KAMIS 소매가격(전국 평균)"
 }
