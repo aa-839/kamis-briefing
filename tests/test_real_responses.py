@@ -72,7 +72,7 @@ def test_kind_in_label_is_never_substituted(kamis):
 def test_briefing_from_real_data_on_sunday(kamis):
     """일요일에 실행 → 금요일 조사분으로, 한글날 빈칸은 10/08 가격으로 비교."""
     b = run(build_briefing(kamis, TemplateWriter(), date(2026, 10, 18)))
-    assert b["survey_date"] == "2026-10-16" and not b["is_mock"]
+    assert b["date"] == b["survey_date"] == "2026-10-16" and not b["is_mock"]
     assert len(b["items"]) == len(BASKET) and not b["missing"]
     assert b["verification"]["passed"], b["verification"]["failures"]
 
@@ -85,3 +85,8 @@ def test_briefing_from_real_data_on_sunday(kamis):
 
     for s in b["sections"]["rising"] + b["sections"]["falling"]:
         assert b["history"][s["item"]], s["item"]
+
+
+def test_already_published_survey_day_is_skipped(kamis):
+    b = run(build_briefing(kamis, TemplateWriter(), date(2026, 10, 18), skip_dates={"2026-10-16"}))
+    assert b is None

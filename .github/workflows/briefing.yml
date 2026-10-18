@@ -1,0 +1,82 @@
+# 평일마다 KAMIS 가격으로 브리핑을 만들어 site/data/에 커밋하고, 웹사이트(GitHub Pages)를 다시 배포한다.
+#
+# - 하루 두 번 실행: 당일 가격이 언제 올라오는지 몰라서 낮·저녁에 한 번씩 본다.
+#   이미 발행한 조사일이면 건너뛰므로(--skip-existing) 같은 브리핑이 두 번 생기지 않는다.
+# - 비밀 값은 저장소 Settings → Secrets and variables → Actions 에 등록한다(코드에 넣지 않는다).
+# - Actions 탭에서 "Run workflow"로 날짜를 지정해 직접 실행할 수도 있다.
+name: 물가 브리핑 발행
+
+on:
+  schedule:
+    - cron: "0 4 * * 1-5"  # 평일 13:00 (한국 시간)
+    - cron: "0 9 * * 1-5"  # 평일 18:00 (한국 시간)
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "기준 날짜 YYYY-MM-DD (비우면 오늘). 그날부터 거슬러 가장 최근 조사일"
+        required: false
+
+permissions:
+  contents: write  # 브리핑 JSON 커밋
+  pages: write     # 웹사이트 배포
+  id-token: write
+
+concurrency:
+  group: briefing
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked --no-dev
+
+      - name: 브리핑 생성
+        env:
+          KAMIS_CERT_KEY: ${{ secrets.KAMIS_CERT_KEY }}
+          KAMIS_CERT_ID: ${{ secrets.KAMIS_CERT_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRIEF_MODEL: ${{ vars.BRIEF_MODEL }}
+          LANGSMITH_API_KEY: ${{ secrets.LANGSMITH_API_KEY }}
+          LANGSMITH_TRACING: ${{ secrets.LANGSMITH_API_KEY != '' && 'true' || 'false' }}
+          LANGSMITH_PROJECT: kamis-briefing
+        run: >-
+          uv run --no-dev kamis-brief --out site/data
+          ${{ github.event_name == 'schedule' && '--skip-existing' || '' }}
+          ${{ inputs.date && format('--date {0}', inputs.date) || '' }}
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data
+          if git diff --cached --quiet; then
+            echo "새 브리핑 없음"
+          else
+            git commit -m "브리핑 발행 $(date +%F)"
+            git pull --rebase
+            git push
+          fi
+
+  deploy:
+    needs: brief
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # 방금 커밋한 브리핑까지 포함
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

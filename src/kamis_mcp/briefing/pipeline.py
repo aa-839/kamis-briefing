@@ -90,8 +90,12 @@ def _section_item(f: ItemFact, comment: str | None) -> dict:
     }
 
 
-async def build_briefing(client, writer: Writer, day: date, is_mock: bool = False) -> dict:
+async def build_briefing(client, writer: Writer, day: date, is_mock: bool = False,
+                         skip_dates: set[str] = frozenset()) -> dict | None:
+    """day 기준 가장 최근 조사일의 브리핑. 그 조사일이 skip_dates에 있으면(이미 발행) None."""
     survey_day, facts, missing = await _find_survey_day(client, day)
+    if survey_day.isoformat() in skip_dates:
+        return None
     await _fill_1w_gaps(client, facts)
 
     selection = select(facts)
@@ -108,7 +112,8 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "schema_version": SCHEMA_VERSION,
         # 가짜 데이터로 만든 브리핑. 실제 발행·보고서에 절대 쓰지 말 것(허위 기재는 실격).
         "is_mock": is_mock,
-        "date": day.isoformat(),
+        # 브리핑 날짜 = 조사일. 주말·공휴일이나 하루 여러 번 실행해도 같은 조사일은 한 파일로 덮어쓴다
+        "date": survey_day.isoformat(),
         "survey_date": survey_dates[-1] if survey_dates else None,
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "headline": written["headline"],
@@ -156,11 +161,16 @@ async def _run(args) -> None:
     day = date.fromisoformat(args.date) if args.date else date.today()
     client = MockKamisClient() if args.mock else KamisClient()
     writer = TemplateWriter() if args.writer == "template" else LLMWriter(args.model)
+    out = Path(args.out)
+    skip = {p.stem for p in out.glob("????-??-??.json")} if args.skip_existing else set()
     try:
-        briefing = await build_briefing(client, writer, day, is_mock=args.mock)
+        briefing = await build_briefing(client, writer, day, is_mock=args.mock, skip_dates=skip)
     finally:
         await client.aclose()
-    path = publish(briefing, Path(args.out))
+    if briefing is None:
+        print("가장 최근 조사일 브리핑이 이미 있습니다. 새 조사 가격이 나오면 다시 실행하세요.")
+        return
+    path = publish(briefing, out)
     v = briefing["verification"]
     print(f"{path}  검증 {v['matched']}/{v['checked']} {'통과' if v['passed'] else '실패'}")
     if w := briefing["writing"]:
@@ -177,6 +187,8 @@ def main() -> None:
     p.add_argument("--date", help="YYYY-MM-DD (기본: 오늘)")
     p.add_argument("--out", default="briefings", help="출력 폴더 (기본: briefings)")
     p.add_argument("--writer", choices=["llm", "template"], default="llm", help="문장 작성 방식 (기본: llm)")
+    p.add_argument("--skip-existing", action="store_true",
+                   help="가장 최근 조사일 브리핑이 출력 폴더에 이미 있으면 만들지 않음 (자동 실행용)")
     p.add_argument("--model", help="'회사:모델' (기본: .env의 BRIEF_MODEL, 없으면 openai:gpt-4.1-mini)")
     asyncio.run(_run(p.parse_args()))
 
