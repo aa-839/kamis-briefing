@@ -5,6 +5,10 @@ description = "KAMIS 농축수산물 가격 Open API MCP 서버"
 requires-python = ">=3.12"
 dependencies = [
     "httpx>=0.28.1",
+    "langchain>=1.4.6",
+    "langchain-anthropic>=1.7.6",
+    "langchain-openai>=1.7.2",
+    "langgraph>=1.2.16",
     "mcp>=2.3",
 ]
 

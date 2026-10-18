@@ -1,8 +1,9 @@
 """브리핑 생성 파이프라인: 조회 → facts → 작성 → 검증 → JSON 발행.
 
-    uv run kamis-brief --mock                 # 가짜 데이터로 오늘 브리핑
-    uv run kamis-brief --mock --date 2026-10-13
-    uv run kamis-brief                        # 실제 KAMIS (.env에 키 필요)
+    uv run kamis-brief                        # 실제 KAMIS + LLM 작성기 (.env에 키 필요)
+    uv run kamis-brief --model anthropic:claude-sonnet-5-5   # 모델만 바꿔서
+    uv run kamis-brief --writer template      # LLM 없이 템플릿 문장
+    uv run kamis-brief --mock --date 2026-10-13               # 가짜 데이터
 
 출력: briefings/<날짜>.json, briefings/index.json (홈페이지가 읽는 파일)
 """
@@ -19,6 +20,7 @@ from .basket import BASKET, CATEGORIES
 from .facts import ItemFact, build_facts, select, set_1w_base
 from .mock import MockKamisClient
 from .verify import verify
+from .llm_writer import LLMWriter
 from .writer import TemplateWriter, Writer
 
 SCHEMA_VERSION = 1
@@ -123,6 +125,8 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "history": history,
         "verification": {k: check[k] for k in ("checked", "matched", "passed")} | {"failures": check["failures"]},
         "writer": type(writer).__name__,
+        # LLM 작성기의 실행 기록: 어떤 모델이 썼고, 검증 실패로 몇 번 다시 썼고, 결국 템플릿으로 대체됐는지
+        "writing": getattr(writer, "last_run", None) or None,
         "source": SOURCE,
     }
 
@@ -151,13 +155,18 @@ def publish(briefing: dict, out_dir: Path) -> Path:
 async def _run(args) -> None:
     day = date.fromisoformat(args.date) if args.date else date.today()
     client = MockKamisClient() if args.mock else KamisClient()
+    writer = TemplateWriter() if args.writer == "template" else LLMWriter(args.model)
     try:
-        briefing = await build_briefing(client, TemplateWriter(), day, is_mock=args.mock)
+        briefing = await build_briefing(client, writer, day, is_mock=args.mock)
     finally:
         await client.aclose()
     path = publish(briefing, Path(args.out))
     v = briefing["verification"]
     print(f"{path}  검증 {v['matched']}/{v['checked']} {'통과' if v['passed'] else '실패'}")
+    if w := briefing["writing"]:
+        print(f"작성: {w['model']}, 재작성 {w['rewrites']}번{', 템플릿으로 대체' if w['fallback'] else ''}")
+        if w.get("error"):
+            print(f"  모델 오류: {w['error']}")
     print(briefing["headline"])
 
 
@@ -167,6 +176,8 @@ def main() -> None:
     p.add_argument("--mock", action="store_true", help="API 키 없이 가짜 데이터로 실행")
     p.add_argument("--date", help="YYYY-MM-DD (기본: 오늘)")
     p.add_argument("--out", default="briefings", help="출력 폴더 (기본: briefings)")
+    p.add_argument("--writer", choices=["llm", "template"], default="llm", help="문장 작성 방식 (기본: llm)")
+    p.add_argument("--model", help="'회사:모델' (기본: .env의 BRIEF_MODEL, 없으면 openai:gpt-4.1-mini)")
     asyncio.run(_run(p.parse_args()))
 
 

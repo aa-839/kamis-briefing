@@ -31,7 +31,8 @@
 | `missing` | string[] | 그날 데이터가 없어 빠진 품목 |
 | `history` | `{ [item]: {date, price}[] }` | rising·falling 품목의 최근 30일 가격(그래프용, 평일만) |
 | `verification` | `{checked, matched, passed, failures}` | 사실 검증 결과. 배지에 사용 |
-| `writer` | string | 문장을 쓴 방식(`TemplateWriter`, 이후 LLM) |
+| `writer` | string | 문장을 쓴 방식: `LLMWriter` 또는 `TemplateWriter` |
+| `writing` | object \| null | LLM 작성 기록 `{model, rewrites, fallback, error?}`. `rewrites`=검증 실패로 다시 쓴 횟수, `fallback`=끝내 실패해 템플릿 문장으로 대체됐는지. 템플릿만 쓴 날은 `null` |
 | `source` | string | 출처 문구. 화면에 그대로 표기 |
 
 ### Item

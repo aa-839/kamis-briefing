@@ -64,3 +64,30 @@ def test_mock_pipeline_end_to_end(tmp_path):
     import json
     index = json.loads((tmp_path / "index.json").read_text(encoding="utf-8"))
     assert [e["date"] for e in index["briefings"]] == ["2026-10-14", "2026-10-13"]
+
+
+def test_verify_catches_flipped_direction():
+    f = [fact()]  # 배추 1주 +18.2%, 1년 -3.0%, 평년 +31.0%
+    assert check_text("배추가 18.2% 올랐습니다", f)[0]["ok"]
+    flipped = check_text("배추가 18.2% 내렸습니다", f)[0]
+    assert not flipped["ok"] and "방향" in flipped["reason"]
+    assert check_text("평년보다 31.0% 비쌉니다", f)[0]["ok"]
+    assert not check_text("평년보다 31.0% 저렴합니다", f)[0]["ok"]  # '싸'가 '비싸' 안에서 잘못 잡히지 않는지
+    assert check_text("작년보다 3% 낮습니다", f)[0]["ok"]
+    assert check_text("18.2%를 기록했습니다", f)[0]["ok"]  # 방향 단어가 없으면 값만 본다
+
+
+def test_verify_headline_number_must_belong_to_named_item():
+    cabbage, apple = fact("배추", w=18.2), fact("사과", w=-12.4, y=6.3, normal=-15.6)
+    sel = {"rising": [cabbage], "falling": [apple], "expensive": [], "cheap": []}
+    ok = verify({"headline": "배추가 18.2% 올랐고, 사과는 12.4% 내렸습니다.", "comments": {}}, sel)
+    assert ok["passed"]
+    swapped = verify({"headline": "사과가 18.2% 올랐습니다.", "comments": {}}, sel)
+    assert not swapped["passed"] and swapped["failures"][0]["item"] == "사과"
+
+
+def test_longer_item_name_wins():
+    """'배추' 안의 '배'를 배(신고)로 착각하지 않는다."""
+    cabbage, pear = fact("배추", w=18.2), fact("배(신고)", w=-5.0, y=1.0, normal=2.0)
+    sel = {"rising": [cabbage], "falling": [pear], "expensive": [], "cheap": []}
+    assert verify({"headline": "배추가 18.2% 올랐고 배는 5.0% 내렸습니다.", "comments": {}}, sel)["passed"]
