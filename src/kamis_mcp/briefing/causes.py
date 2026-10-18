@@ -165,6 +165,14 @@ def overall_direction(text: str) -> int:
     return int(up and not down) - int(down and not up)
 
 
+# 원인 문장이라면 수급을 말하는 낱말이 하나는 있어야 한다. "대형선망은 고등어를 잡는 근해어업이다"처럼
+# 품목 설명일 뿐인 문장을 AI 심사가 통과시킨 적이 있어(실제 10/16 고등어) 코드로 거른다.
+CAUSE_WORDS = re.compile(
+    r"감소|증가|줄|늘|부족|과잉|작황|출하|반입|생산|수확|어획|조업|수요|소비|수입|날씨|기온|폭염|한파|"
+    r"장마|호우|태풍|가뭄|냉해|병해|공급|재고|물량|산지|명절|비축|방출|할인"
+)
+
+
 def origin_mismatch(quote: str, f: ItemFact) -> str | None:
     """품종이 국산인데 '수입산 고등어' 이야기(또는 그 반대)면 다른 상품이다.
 
@@ -190,6 +198,8 @@ def check_extraction(e: Extraction, sources: list[Source], f: ItemFact) -> str |
         return "quote가 기사 본문에 그대로 있지 않음(글자를 바꾸거나 요약함)"
     if not (mentions_item(quote, _name(f)) or mentions_item(src.title, _name(f))):
         return f"quote와 기사 제목에 '{_name(f)}'가 없음(다른 품목 이야기일 수 있음, 예: 방울토마토)"
+    if not CAUSE_WORDS.search(quote):
+        return "quote에 수급을 말하는 낱말(출하·작황·수요·날씨 등)이 없음(원인이 아니라 설명일 수 있음)"
     if problem := origin_mismatch(quote, f):
         return problem
     move = 1 if f.change_1w_pct > 0 else -1

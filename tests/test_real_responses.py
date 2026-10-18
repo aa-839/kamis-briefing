@@ -50,7 +50,7 @@ def test_sunday_is_no_data(kamis):
 
 
 def test_period_keeps_only_national_average(kamis):
-    rows = run(kamis.period_prices("211", "02", "200", "04", date(2026, 9, 16), FRIDAY))
+    rows = run(kamis.period_prices("211", "02", "200", "04", date(2025, 10, 17), FRIDAY))
     assert rows and {r["region"] for r in rows} == {"평균"}
     assert rows[-1] == {"date": "2026-10-16", "region": "평균", "market": None, "price": 5557.0}
 
@@ -123,3 +123,12 @@ def test_html_response_is_reported():
     with pytest.raises(KamisError, match="접근이 차단") as e:
         run(KamisClient(cert_key="k", cert_id="i", transport=html).daily_by_category("200", day=FRIDAY))
     assert e.value.code == "NOJSON"
+
+
+def test_good_buys_are_cheap_on_a_one_year_view(kamis):
+    """'지금 사기 좋은 품목'은 1주 동안 내렸고 + 최근 1년 중 오늘보다 싼 날이 절반 이하."""
+    b = run(build_briefing(kamis, TemplateWriter(), date(2026, 10, 18)))
+    for item in b["sections"]["falling"]:
+        assert item["change_1w_pct"] <= -3
+        assert item["year"]["cheaper_days_pct"] <= 50, item["item"]
+        assert len(b["history"][item["item"]]) >= 60  # 1년치 그래프

@@ -134,3 +134,13 @@ def test_origin_mismatch_is_rejected_by_code_not_left_to_ai():
     e = Extraction(found=True, source_index=0, quote="수입산 고등어는 노르웨이 쿼터 감소로 가격이 크게 상승했다.",
                    summary="노르웨이 쿼터 감소")
     assert "수입산" in check_extraction(e, [article], mackerel)
+
+
+def test_description_without_supply_words_is_not_a_cause():
+    """AI 심사가 통과시켰던 실제 10/16 고등어 인용: 원인이 아니라 설명."""
+    mackerel = fact("고등어", w=11.6)
+    article = Source(url="https://www.mk.co.kr/1", title="핵심 고등어 어업선 10년간 현대화", published="2026-10-14",
+                     text="대형선망은 고등어 등을 잡는 대표적인 근해어업이다.")
+    e = Extraction(found=True, source_index=0, quote="대형선망은 고등어 등을 잡는 대표적인 근해어업이다.",
+                   summary="고등어 어업선 노후화")
+    assert "수급" in check_extraction(e, [article], mackerel)

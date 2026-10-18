@@ -31,7 +31,7 @@ LOW_THRESHOLD = 0.95  # 가장 싼 3개 달이면 연평균보다 5% 이상 낮�
 CLEARLY_LOW = 0.90  # 3위 밖이어도 10% 이상 낮으면 저가철(감귤 10월처럼 싼 달이 여럿인 품목)
 
 
-def _kinds_for(f: ItemFact) -> list[str]:
+def kinds_for(f: ItemFact) -> list[str]:
     """월평균에 합칠 품종: 바구니에서 품종을 정한 품목은 그 품종만, 아니면 단위가 같은 품종 전부."""
     b = next(b for b in BASKET if b.label == f.label)
     if b.kind_codes:
@@ -45,7 +45,7 @@ async def monthly_table(client, f: ItemFact, last_year: int) -> dict[int, dict[i
     """{연도: {월: 가격}} 소매 월평균. 품종 여럿이면 같은 달끼리 평균."""
     graderank = codebook().graderank(f.rank_code or "04") or "1"
     collected: dict[tuple[int, int], list[float]] = {}
-    for kind in _kinds_for(f):
+    for kind in kinds_for(f):
         try:
             rows = await client.monthly_prices(f.item_code, kind, f.category_code, graderank, last_year, YEARS)
         except KamisError:

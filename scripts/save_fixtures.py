@@ -4,7 +4,7 @@
 
 KAMIS가 응답 형식을 바꾸면 이 스크립트로 다시 저장하고 테스트를 돌려 보면 된다.
 - 응답의 condition(요청 파라미터 메아리)에는 인증키가 들어 있어서 지우고 저장한다.
-- 일별 가격(periodProductList)은 장바구니 품목마다 2주치, '평균'·'평년'·'서울' 행만 남긴다.
+- 일별 가격(periodProductList)은 장바구니 품목마다 1년치, '평균'·'평년' 행만 남긴다.
 """
 
 import asyncio
@@ -17,12 +17,12 @@ import httpx
 
 from kamis_mcp.briefing.basket import BASKET, CATEGORIES
 from kamis_mcp.briefing.facts import build_facts
-from kamis_mcp.briefing.pipeline import _rank_for_period
+from kamis_mcp.briefing.pipeline import _rank_for_period, _year_series
 from kamis_mcp.briefing.seasonal import seasonal_info
 from kamis_mcp.client import KamisClient, KamisError, load_dotenv
 
 OUT = Path("tests/fixtures")
-KEEP_REGIONS = {"평균", "평년", "서울"}
+KEEP_REGIONS = {"평균", "평년"}  # 평년 행은 걸러지는지 검사용
 
 
 def fixture_name(params: dict) -> str:
@@ -81,12 +81,12 @@ async def main(day: date) -> None:
         facts, _ = build_facts(rows)
         end = day - timedelta(days=7)
         for f in facts:
-            for start, stop in ((end - timedelta(days=10), end), (day - timedelta(days=30), day)):
-                try:
-                    await client.period_prices(f.item_code, f.kind_code, f.category_code, _rank_for_period(f),
-                                               start, stop)
-                except KamisError as e:
-                    print(f"  {f.label} {f.kind_name}/{f.rank}: {e}")
+            try:  # 공휴일 1주 전 대체용 짧은 기간
+                await client.period_prices(f.item_code, f.kind_code, f.category_code, _rank_for_period(f),
+                                           end - timedelta(days=10), end)
+            except KamisError as e:
+                print(f"  {f.label} {f.kind_name}/{f.rank}: {e}")
+            await _year_series(client, f, day)  # 그래프·1년 중 위치용 1년치(품종별)
         await seasonal_info(client, facts, day)  # 예년 저가철용 월별 가격(품목·품종별)
     finally:
         await client.aclose()

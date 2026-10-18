@@ -13,6 +13,7 @@ from .basket import BASKET, BasketItem
 TOP_N = 3
 MOVE_THRESHOLD_PCT = 3.0  # 1주 변동이 이보다 작으면 '많이 오른/내린' 품목에서 제외
 NORMAL_THRESHOLD_PCT = 10.0  # 평년 대비 이 이상 벌어져야 '비싼/싼' 품목
+GOOD_BUY_MAX_CHEAPER_DAYS_PCT = 50  # '사기 좋은 품목': 최근 1년 중 오늘보다 싼 날이 절반 이하
 
 
 @dataclass
@@ -102,11 +103,23 @@ def set_1w_base(f: ItemFact, price: float, base_date: str) -> None:
     f.change_1w_pct = pct_change(f.price, price)
 
 
-def select(facts: list[ItemFact]) -> dict:
-    """브리핑 섹션별로 품목을 고른다."""
+def good_buy(f: ItemFact, position: dict | None) -> bool:
+    """1주 동안 내렸어도 1년 기준으로 비싸면 '지금 사기 좋은' 품목이 아니다.
+
+    오늘보다 싼 날이 최근 1년 중 절반 이하여야 한다. 1년 자료가 모자라면 평년보다 싼지로 대신 본다.
+    """
+    if position is not None:
+        return position["cheaper_days_pct"] <= GOOD_BUY_MAX_CHEAPER_DAYS_PCT
+    return f.vs_normal_pct is not None and f.vs_normal_pct <= 0
+
+
+def select(facts: list[ItemFact], positions: dict[str, dict | None] | None = None) -> dict:
+    """브리핑 섹션별로 품목을 고른다. positions(1년 중 위치)를 주면 '사기 좋은 품목'을 1년 기준으로 거른다."""
     moved = [f for f in facts if f.change_1w_pct is not None]
     rising = sorted((f for f in moved if f.change_1w_pct >= MOVE_THRESHOLD_PCT), key=lambda f: -f.change_1w_pct)
     falling = sorted((f for f in moved if f.change_1w_pct <= -MOVE_THRESHOLD_PCT), key=lambda f: f.change_1w_pct)
+    if positions is not None:
+        falling = [f for f in falling if good_buy(f, positions.get(f.label))]
     normal = [f for f in facts if f.vs_normal_pct is not None]
     return {
         "rising": rising[:TOP_N],

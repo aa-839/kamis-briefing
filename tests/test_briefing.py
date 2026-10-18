@@ -99,3 +99,12 @@ def test_template_headline_leads_with_good_buys():
     both = w.write({"rising": [up], "falling": [down], "expensive": [], "cheap": []})["headline"]
     assert both.index("시금치") < both.index("양배추")
     assert w.write({"rising": [up], "falling": [], "expensive": [], "cheap": []})["headline"].startswith("양배추가")
+
+
+def test_falling_item_must_also_be_cheap_on_one_year_view():
+    a, b = fact("a", w=-10.0), fact("b", w=-8.0)
+    positions = {"a": {"cheaper_days_pct": 80}, "b": {"cheaper_days_pct": 20}}  # a는 내렸지만 1년 중 비싼 편
+    assert [f.label for f in select([a, b], positions)["falling"]] == ["b"]
+    assert [f.label for f in select([a, b])["falling"]] == ["a", "b"]  # 1년 정보가 없으면 기존 기준
+    no_year = fact("c", w=-5.0, normal=12.0)  # 1년 자료가 모자라면 평년보다 싼지로 판단
+    assert select([no_year], {"c": None})["falling"] == []

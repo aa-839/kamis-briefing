@@ -14,21 +14,23 @@ import json
 import os
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from statistics import mean
 
 from ..client import KamisClient, KamisError, load_dotenv
 from ..codes import LIVESTOCK_CATEGORY
 from .basket import BASKET, CATEGORIES
-from .facts import ItemFact, build_facts, select, set_1w_base
+from .facts import MOVE_THRESHOLD_PCT, ItemFact, build_facts, select, set_1w_base
 from .mock import MockKamisClient
 from .verify import verify
 from .causes import CauseFinder
 from .llm_writer import LLMWriter
 from .nutrition import nutrition_for
-from .seasonal import seasonal_info
+from .seasonal import kinds_for, seasonal_info
 from .writer import TemplateWriter, Writer
 
 SCHEMA_VERSION = 1
-HISTORY_DAYS = 30
+YEAR_DAYS = 364  # 그래프·'1년 중 위치'에 쓰는 기간. KAMIS 일별 API는 최근 1년까지만 조회된다
+MIN_YEAR_POINTS = 60  # 조사된 날이 이보다 적으면 1년 중 위치를 판단하지 않는다
 SURVEY_LOOKBACK_DAYS = 7  # 오늘 조사가 없으면(주말·공휴일·아직 미발표) 며칠 전까지 거슬러 찾을지
 MIN_COVERAGE = len(BASKET) // 2  # 토요일엔 축산물만 조사돼서, 절반 이상 있어야 '조사일'로 본다
 SOURCE = "KAMIS 소매가격(전국 평균)"
@@ -48,9 +50,51 @@ async def _daily_series(client, f: ItemFact, start: date, end: date) -> list[dic
                   key=lambda r: r["date"])
 
 
-async def _history(client, f: ItemFact, day: date) -> list[dict]:
-    """최근 30일 가격(그래프용)."""
-    return await _daily_series(client, f, day - timedelta(days=HISTORY_DAYS), day)
+async def _year_series(client, f: ItemFact, end: date) -> list[dict]:
+    """최근 1년 일별 가격(전국 평균). 철마다 품종이 바뀌는 품목은 같은 단위 품종을 이어 붙인다.
+
+    고랭지 배추는 7~11월만 조사돼서 한 품종만으로는 1년이 안 채워진다. 같은 날 여러 품종이 있으면
+    오늘 조사된 품종 값을, 없으면 그날 있는 품종들의 평균을 쓴다.
+    """
+    start = end - timedelta(days=YEAR_DAYS)
+    by_kind: dict[str, dict[str, float]] = {}
+    for kind in kinds_for(f):
+        try:
+            rows = await client.period_prices(f.item_code, kind, f.category_code, _rank_for_period(f), start, end)
+        except KamisError:
+            continue
+        by_kind[kind] = {r["date"]: r["price"] for r in rows if r["price"] is not None}
+    own = by_kind.get(f.kind_code or "", {})
+    series = []
+    for d in sorted(set().union(*by_kind.values())) if by_kind else []:
+        price = own.get(d) or round(mean(v[d] for v in by_kind.values() if d in v))
+        series.append({"date": d, "price": price})
+    return series
+
+
+async def _year_series_many(client, facts: list[ItemFact], end: date, concurrency: int = 4) -> dict[str, list[dict]]:
+    """여러 품목의 1년치를 동시에 몇 개씩 받는다. 1년치 응답은 한 번에 10초 넘게 걸려서 차례로 받으면 느리다."""
+    gate = asyncio.Semaphore(concurrency)  # KAMIS 서버에 한꺼번에 몰리지 않게
+
+    async def one(f: ItemFact) -> list[dict]:
+        async with gate:
+            return await _year_series(client, f, end)
+
+    unique = list({f.label: f for f in facts}.values())
+    results = await asyncio.gather(*(one(f) for f in unique))
+    return {f.label: r for f, r in zip(unique, results)}
+
+
+def year_position(series: list[dict], price: float) -> dict | None:
+    """오늘 가격이 최근 1년 중 어디쯤인가. cheaper_days_pct = 오늘보다 싼 날의 비율(%)."""
+    prices = [p["price"] for p in series]
+    if len(prices) < MIN_YEAR_POINTS:
+        return None
+    return {
+        "cheaper_days_pct": round(sum(p < price for p in prices) / len(prices) * 100),
+        "avg": round(mean(prices)), "min": min(prices), "max": max(prices),
+        "days": len(prices), "since": series[0]["date"],
+    }  # fmt: skip
 
 
 async def _fill_1w_gaps(client, facts: list[ItemFact]) -> None:
@@ -87,7 +131,7 @@ async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], lis
 
 
 def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, season: dict | None = None,
-                  nutrition: dict | None = None) -> dict:
+                  nutrition: dict | None = None, year: dict | None = None) -> dict:
     return {
         "item": f.label,
         "kind": f.kind_name,
@@ -101,6 +145,7 @@ def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, s
         "cause": cause,
         "season": season,
         "nutrition": nutrition,
+        "year": year,
     }
 
 
@@ -114,7 +159,13 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
     await _fill_1w_gaps(client, facts)
     seasons = await seasonal_info(client, facts, survey_day, seasonal_cache)
 
-    selection = select(facts)
+    # 1년 흐름: 내린 품목 후보와 오른 품목의 최근 1년 가격 → '1년 중 위치'
+    # '지금 사기 좋은 품목'은 1주 동안 내렸고 + 1년 중 싼 편(오늘보다 싼 날이 절반 이하)인 것만
+    candidates = [f for f in facts if f.change_1w_pct is not None and f.change_1w_pct <= -MOVE_THRESHOLD_PCT]
+    candidates += select(facts)["rising"]
+    series = await _year_series_many(client, candidates, survey_day)
+    positions = {f.label: year_position(series[f.label], f.price) for f in candidates}
+    selection = select(facts, positions)
     written = writer.write(selection)
     check = verify(written, selection)
     comments = written["comments"]
@@ -124,9 +175,7 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
     if cause_finder is not None:
         causes, cause_log = cause_finder.find_all(selection["rising"] + selection["falling"], survey_day)
 
-    history = {}
-    for f in selection["rising"] + selection["falling"]:
-        history[f.label] = await _history(client, f, survey_day)
+    history = {f.label: series[f.label] for f in selection["rising"] + selection["falling"]}
 
     survey_dates = sorted({f.survey_date for f in facts if f.survey_date})
     return {
@@ -140,9 +189,11 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "headline": written["headline"],
         "sections": {
             "rising": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label),
-                                     nutrition_for(f.label, survey_day.month)) for f in selection["rising"]],
+                                     nutrition_for(f.label, survey_day.month), positions.get(f.label))
+                       for f in selection["rising"]],
             "falling": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label),
-                                      nutrition_for(f.label, survey_day.month)) for f in selection["falling"]],
+                                      nutrition_for(f.label, survey_day.month), positions.get(f.label))
+                        for f in selection["falling"]],
             "vs_normal": {
                 "expensive": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["expensive"]],
                 "cheap": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["cheap"]],

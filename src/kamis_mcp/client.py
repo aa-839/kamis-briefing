@@ -89,7 +89,7 @@ def _as_list(v) -> list:
 
 
 class KamisClient:
-    def __init__(self, cert_key: str | None = None, cert_id: str | None = None, timeout: float = 20.0,
+    def __init__(self, cert_key: str | None = None, cert_id: str | None = None, timeout: float = 60.0,
                  transport: httpx.AsyncBaseTransport | None = None):
         # 복사·붙여넣기로 앞뒤 공백·줄바꿈이 섞여 들어와도 인증되도록 다듬는다
         self.cert_key = (cert_key or os.environ.get("KAMIS_CERT_KEY") or "").strip() or None

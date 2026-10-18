@@ -106,7 +106,8 @@ function renderCards(list, items, history, surveyDate) {
 
       const base = movedBase(item.base_1w_date, surveyDate);
       fillChange(card.querySelector('.card__change'), item.change_1w_pct, base ? `${base.long}보다` : '1주 전보다', base);
-      drawSparkline(card.querySelector('.spark__svg'), history?.[item.item], item.item);
+      drawSparkline(card.querySelector('.spark__svg'), history?.[item.item], item.item, item.year);
+      fillYear(card.querySelector('.spark__caption'), item.year);
       card.querySelector('.card__comment').textContent = item.comment ?? '';
       fillNutrition(card.querySelector('.nutri'), item.nutrition);
       fillCause(card.querySelector('.cause'), item.cause);
@@ -114,6 +115,26 @@ function renderCards(list, items, history, surveyDate) {
     }),
   );
   list.nextElementSibling.hidden = items.length > 0; // .empty 안내문
+}
+
+/**
+ * '최근 1년 중 위치'. cheaper_days_pct = 최근 1년 중 오늘보다 싼 날의 비율.
+ * 1주 변동만 보면 '싸 보이는 착시'가 생겨서, 1년 기준으로 정말 싼지 함께 보여 준다.
+ */
+function fillYear(caption, year) {
+  if (!year) {
+    caption.textContent = '최근 1년';
+    return;
+  }
+  const p = year.cheaper_days_pct;
+  const level = p <= 20 ? '매우 싼 편' : p <= 50 ? '싼 편' : p <= 80 ? '비싼 편' : '매우 비싼 편';
+  const strong = document.createElement('strong');
+  strong.className = `year-level year-level--${p <= 50 ? 'low' : 'high'}`;
+  strong.textContent = level;
+  caption.replaceChildren(
+    '최근 1년 중 ', strong,
+    ` · 오늘보다 싼 날 ${p}% · 1년 평균 ${won(year.avg)} (점선)`,
+  );
 }
 
 /** 영양성분 100g당. 값은 성분표 원본 그대로 보여 주고, 어떤 식품 항목 기준인지 밝힌다. */

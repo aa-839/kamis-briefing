@@ -319,7 +319,10 @@ main { padding-block: 24px 64px; outline: none; }
 .spark__svg { width: 100%; height: 48px; overflow: visible; }
 .spark__line { fill: none; stroke: var(--brand); stroke-width: 2; vector-effect: non-scaling-stroke; } /* 늘려도 선 두께 유지 */
 .spark__area { fill: var(--brand); stroke: none; opacity: 0.1; }
+.spark__avg { fill: none; stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
 .spark__caption { font-size: 0.75rem; color: var(--text-muted); }
+.year-level--low { color: var(--down); }
+.year-level--high { color: var(--up); }
 
 /* ---------- 평년 비교 ---------- */
 .normal-grid { display: grid; gap: var(--gap); }

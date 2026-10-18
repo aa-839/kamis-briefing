@@ -24,12 +24,12 @@
 | `generated_at` | ISO 8601 | 생성 시각 |
 | `headline` | string | 한 줄 요약 |
 | `sections.rising` | Item[] (0~3개) | 1주 전 대비 많이 오른 품목 |
-| `sections.falling` | Item[] (0~3개) | 1주 전 대비 많이 내린 품목(지금 사기 좋은) |
+| `sections.falling` | Item[] (0~3개) | 지금 사기 좋은 품목: 1주 전 대비 3% 이상 내렸고 + 최근 1년 중 오늘보다 싼 날이 절반 이하 |
 | `sections.vs_normal.expensive` | `{item, vs_normal_pct}`[] | 평년보다 10% 이상 비싼 품목 |
 | `sections.vs_normal.cheap` | `{item, vs_normal_pct}`[] | 평년보다 10% 이상 싼 품목 |
 | `items` | Item[] | 장바구니 전체 품목(표로 보여줄 때). `comment`는 항상 null |
 | `missing` | string[] | 그날 데이터가 없어 빠진 품목 |
-| `history` | `{ [item]: {date, price}[] }` | rising·falling 품목의 최근 30일 가격(그래프용, 평일만) |
+| `history` | `{ [item]: {date, price}[] }` | rising·falling 품목의 최근 1년 가격(그래프용, 조사일만). 철마다 품종이 바뀌는 품목은 같은 단위 품종을 이어 붙임 |
 | `verification` | `{checked, matched, passed, failures}` | 사실 검증 결과. 배지에 사용 |
 | `writer` | string | 문장을 쓴 방식: `LLMWriter` 또는 `TemplateWriter` |
 | `writing` | object \| null | LLM 작성 기록 `{model, rewrites, fallback, error?}`. `rewrites`=검증 실패로 다시 쓴 횟수, `fallback`=끝내 실패해 템플릿 문장으로 대체됐는지. 템플릿만 쓴 날은 `null` |
@@ -52,6 +52,7 @@
 | `cause` | Cause \| null | 가격 변동 원인(rising·falling 품목만). 근거가 확인된 것만 있고, 없으면 `null` |
 | `season` | Season \| null | 예년 저가철 정보. 축산물이나 월별 자료가 모자라면 `null` |
 | `nutrition` | Nutrition \| null | 영양성분 100g당(rising·falling 품목만). 공식 성분표 값 그대로 |
+| `year` | object \| null | 최근 1년 중 위치 `{cheaper_days_pct, avg, min, max, days, since}`. `cheaper_days_pct`=최근 1년 중 오늘보다 싼 날의 비율(%). rising·falling 품목만 |
 
 ### Nutrition
 
