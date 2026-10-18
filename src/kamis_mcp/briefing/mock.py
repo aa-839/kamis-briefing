@@ -49,6 +49,9 @@ class MockKamisClient:
             rows.append(row)
         return rows
 
+    async def monthly_prices(self, *args, **kwargs) -> list[dict]:
+        return []  # 가짜 데이터에는 예년 저가철을 만들지 않는다
+
     async def period_prices(self, item_code, kind_code, category_code, rank_code, start, end,
                             price_type="retail", region_code=None) -> list[dict]:
         rng = random.Random(f"{item_code}:{start}:{end}")

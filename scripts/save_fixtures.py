@@ -18,6 +18,7 @@ import httpx
 from kamis_mcp.briefing.basket import BASKET, CATEGORIES
 from kamis_mcp.briefing.facts import build_facts
 from kamis_mcp.briefing.pipeline import _rank_for_period
+from kamis_mcp.briefing.seasonal import seasonal_info
 from kamis_mcp.client import KamisClient, KamisError, load_dotenv
 
 OUT = Path("tests/fixtures")
@@ -86,7 +87,7 @@ async def main(day: date) -> None:
                                                start, stop)
                 except KamisError as e:
                     print(f"  {f.label} {f.kind_name}/{f.rank}: {e}")
-        await client.monthly_prices("211", "02", "200", "1", day.year, 3)
+        await seasonal_info(client, facts, day)  # 예년 저가철용 월별 가격(품목·품종별)
     finally:
         await client.aclose()
     print(f"{len(saved)}개 저장 → {OUT}/  (장바구니 {len(BASKET)}개 중 {len(facts)}개 조사됨)")

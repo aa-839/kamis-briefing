@@ -23,6 +23,7 @@ from .mock import MockKamisClient
 from .verify import verify
 from .causes import CauseFinder
 from .llm_writer import LLMWriter
+from .seasonal import seasonal_info
 from .writer import TemplateWriter, Writer
 
 SCHEMA_VERSION = 1
@@ -84,7 +85,7 @@ async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], lis
     raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 조사된 가격이 없습니다(KAMIS 응답: 데이터 없음).")
 
 
-def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None) -> dict:
+def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, season: dict | None = None) -> dict:
     return {
         "item": f.label,
         "kind": f.kind_name,
@@ -96,16 +97,19 @@ def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None) -
         "vs_normal_pct": f.vs_normal_pct,
         "comment": comment,
         "cause": cause,
+        "season": season,
     }
 
 
 async def build_briefing(client, writer: Writer, day: date, is_mock: bool = False,
-                         skip_dates: set[str] = frozenset(), cause_finder=None) -> dict | None:
+                         skip_dates: set[str] = frozenset(), cause_finder=None,
+                         seasonal_cache: Path | None = None) -> dict | None:
     """day 기준 가장 최근 조사일의 브리핑. 그 조사일이 skip_dates에 있으면(이미 발행) None."""
     survey_day, facts, missing = await _find_survey_day(client, day)
     if survey_day.isoformat() in skip_dates:
         return None
     await _fill_1w_gaps(client, facts)
+    seasons = await seasonal_info(client, facts, survey_day, seasonal_cache)
 
     selection = select(facts)
     written = writer.write(selection)
@@ -132,14 +136,16 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "headline": written["headline"],
         "sections": {
-            "rising": [_section_item(f, comments.get(f.label), causes.get(f.label)) for f in selection["rising"]],
-            "falling": [_section_item(f, comments.get(f.label), causes.get(f.label)) for f in selection["falling"]],
+            "rising": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label))
+                       for f in selection["rising"]],
+            "falling": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label))
+                        for f in selection["falling"]],
             "vs_normal": {
                 "expensive": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["expensive"]],
                 "cheap": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["cheap"]],
             },
         },
-        "items": [_section_item(f, None) for f in facts],
+        "items": [_section_item(f, None, None, seasons.get(f.label)) for f in facts],
         "missing": missing,
         "history": history,
         "verification": {k: check[k] for k in ("checked", "matched", "passed")} | {"failures": check["failures"]},
@@ -183,7 +189,8 @@ async def _run(args) -> None:
     out = Path(args.out)
     skip = {p.stem for p in out.glob("????-??-??.json")} if args.skip_existing else set()
     try:
-        briefing = await build_briefing(client, writer, day, is_mock=args.mock, skip_dates=skip, cause_finder=finder)
+        briefing = await build_briefing(client, writer, day, is_mock=args.mock, skip_dates=skip, cause_finder=finder,
+                                        seasonal_cache=out / "seasonal")
     finally:
         await client.aclose()
     if briefing is None:

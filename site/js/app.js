@@ -167,6 +167,7 @@ function renderTable(items, surveyDate) {
       const name = document.createElement('th'); // 각 행의 제목 칸은 th scope="row"
       name.scope = 'row';
       name.textContent = item.item;
+      if (item.season?.low_season) name.append(' ', seasonBadge(item.season, surveyDate));
       // 품종이 이름과 다르면 같이 보여 준다(사과 → "홍로 · 10개"). 철마다 품종이 바뀌는 품목이 있어서.
       const sub = [item.kind && item.kind !== item.item ? item.kind : null, item.unit].filter(Boolean).join(' · ');
       if (sub) {
@@ -191,6 +192,29 @@ function renderTable(items, surveyDate) {
       return tr;
     }),
   );
+}
+
+/**
+ * '예년 저가철' 표시. 근거(최근 몇 년, 연평균 대비 몇 %, 가장 싼 달)를 말풍선과 스크린리더 문장으로 함께 준다.
+ * 제철과는 다르다: KAMIS 월별 가격에서 계산한 '예년엔 이 달에 쌌다'는 지난 기록이다.
+ */
+function seasonBadge(season, surveyDate) {
+  const month = parseDate(surveyDate).getMonth() + 1;
+  const years = season.years.length ? `${season.years[0]}~${season.years.at(-1)}년` : '최근 몇 년';
+  const pct = Math.abs(season.month_vs_year_avg_pct).toFixed(1);
+  const why = `${years} ${month}월 가격은 연평균보다 평균 ${pct}% 낮았어요.` +
+    (season.cheapest_months.length ? ` 예년에 가장 싼 달: ${season.cheapest_months.join('·')}월.` : '');
+  const badge = document.createElement('span');
+  badge.className = 'season-badge';
+  badge.title = why;
+  const label = document.createElement('span');
+  label.setAttribute('aria-hidden', 'true');
+  label.textContent = '예년 저가철';
+  const sr = document.createElement('span');
+  sr.className = 'visually-hidden';
+  sr.textContent = `예년 저가철. ${why}`;
+  badge.append(label, sr);
+  return badge;
 }
 
 /**

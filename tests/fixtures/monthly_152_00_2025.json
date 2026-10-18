@@ -1,0 +1,13 @@
+{
+ "error_code": "000",
+ "price": [
+  {
+   "productclscode": "02",
+   "caption": "중도매인 판매가격 > 식량작물 > 감자 > 감자 > 상품 > 20kg"
+  },
+  {
+   "productclscode": "01",
+   "caption": "소매가격 > 식량작물 > 감자 > 감자 > 상품 > 1kg"
+  }
+ ]
+}

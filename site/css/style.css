@@ -370,6 +370,20 @@ main { padding-block: 24px 64px; outline: none; }
 }
 .price-table thead th:first-child { background: var(--surface-2); z-index: 1; }
 
+/* 예년 저가철 표시: 품목 이름 옆 작은 꼬리표 */
+.season-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: 2px;
+  cursor: help;
+}
+
 /* ---------- 지난 브리핑 ---------- */
 .archive-list { display: grid; gap: 8px; }
 .archive-list a {

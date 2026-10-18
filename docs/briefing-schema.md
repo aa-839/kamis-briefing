@@ -50,6 +50,18 @@
 | `vs_normal_pct` | number \| null | 평년 대비 |
 | `comment` | string \| null | 품목 설명 문장 |
 | `cause` | Cause \| null | 가격 변동 원인(rising·falling 품목만). 근거가 확인된 것만 있고, 없으면 `null` |
+| `season` | Season \| null | 예년 저가철 정보. 축산물이나 월별 자료가 모자라면 `null` |
+
+### Season
+
+KAMIS 월별 소매가격 최근 3년으로 계산한 '예년엔 이 달에 쌌다'(예측 아님, 제철과 다름).
+
+| 필드 | 타입 | 설명 |
+|---|---|---|
+| `low_season` | boolean | 이번 달이 예년 저가철인지. 화면의 '예년 저가철' 표시 |
+| `month_vs_year_avg_pct` | number \| null | 예년 이 달 가격이 연평균보다 몇 % 높았나(음수=쌌음) |
+| `cheapest_months` | number[] | 예년에 가장 쌌던 달(연평균보다 낮은 달 중 최대 3개) |
+| `years` | number[] | 계산에 쓴 연도 |
 
 ### Cause
 

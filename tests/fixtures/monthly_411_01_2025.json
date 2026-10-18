@@ -1,0 +1,13 @@
+{
+ "error_code": "000",
+ "price": [
+  {
+   "productclscode": "02",
+   "caption": "중도매인 판매가격 > 과일류 > 사과 > 홍옥 > 상품 > 10kg"
+  },
+  {
+   "productclscode": "01",
+   "caption": "소매가격 > 과일류 > 사과 > 홍옥 > 상품 > 10개"
+  }
+ ]
+}

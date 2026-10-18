@@ -1,0 +1,13 @@
+{
+ "error_code": "000",
+ "price": [
+  {
+   "productclscode": "02",
+   "caption": "중도매인 판매가격 > 채소류 > 당근 > 세척 > 상품 > 20kg"
+  },
+  {
+   "productclscode": "01",
+   "caption": "소매가격 > 채소류 > 당근 > 세척 > 상품 > 1kg"
+  }
+ ]
+}
