@@ -91,3 +91,11 @@ def test_longer_item_name_wins():
     cabbage, pear = fact("배추", w=18.2), fact("배(신고)", w=-5.0, y=1.0, normal=2.0)
     sel = {"rising": [cabbage], "falling": [pear], "expensive": [], "cheap": []}
     assert verify({"headline": "배추가 18.2% 올랐고 배는 5.0% 내렸습니다.", "comments": {}}, sel)["passed"]
+
+
+def test_template_headline_leads_with_good_buys():
+    up, down = fact("양배추", w=16.9), fact("시금치", w=-13.9)
+    w = TemplateWriter()
+    both = w.write({"rising": [up], "falling": [down], "expensive": [], "cheap": []})["headline"]
+    assert both.index("시금치") < both.index("양배추")
+    assert w.write({"rising": [up], "falling": [], "expensive": [], "cheap": []})["headline"].startswith("양배추가")

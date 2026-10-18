@@ -46,18 +46,20 @@ def since_1w(f: ItemFact) -> str:
 class TemplateWriter:
     def write(self, selection: dict[str, list[ItemFact]]) -> dict:
         rising, falling = selection["rising"], selection["falling"]
+        # 사기 좋은(내린) 품목을 먼저 말한다. 화면도 '지금 사기 좋은 품목'이 위에 있다
         parts = []
-        if rising:
-            f = rising[0]
-            parts.append(f"{josa(f.label, '이/가')} {since_1w(f)} {pct(f.change_1w_pct)} 올랐고")
         if falling:
             f = falling[0]
-            same_base = rising and since_1w(rising[0]) == since_1w(f)
+            parts.append(f"{josa(f.label, '이/가')} {since_1w(f)} {pct(f.change_1w_pct)} 내렸고")
+        if rising:
+            f = rising[0]
+            same_base = falling and since_1w(falling[0]) == since_1w(f)
             when = "" if same_base else f"{since_1w(f)} "
-            parts.append(f"{josa(f.label, '은/는')} {when}{pct(f.change_1w_pct)} 내렸습니다")
+            subject = josa(f.label, "은/는" if falling else "이/가")  # 두 번째 절이면 '양배추는', 혼자면 '양배추가'
+            parts.append(f"{subject} {when}{pct(f.change_1w_pct)} 올랐습니다")
         headline = ", ".join(parts) + "." if parts else "이번 주는 크게 움직인 품목이 없습니다."
-        if rising and not falling:
-            headline = headline.replace("올랐고.", "올랐습니다.")
+        if falling and not rising:
+            headline = headline.replace("내렸고.", "내렸습니다.")
 
         comments = {}
         for f in rising + falling:
