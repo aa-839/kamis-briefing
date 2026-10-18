@@ -1,0 +1,259 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "10,257"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "9,627"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "8,508"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "8,489"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "8,217"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "8,090"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "8,660"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "14,094"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "14,160"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "14,226"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "14,206"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "13,780"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "13,551"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "13,410"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "9,960"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "9,960"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,960"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,960"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "-"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "-"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "12,400"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "19,900"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "7,970"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "7,970"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "7,970"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "7,970"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "7,970"
+   },
+   {
+    "itemname": "오이",
+    "kindname": "가시계통(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "7,970"
+   }
+  ]
+ }
+}

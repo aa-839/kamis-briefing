@@ -1,0 +1,637 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,296"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,432"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,810"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,470"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,778"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,793"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,292"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,613"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,608"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,646"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,684"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,781"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,753"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,736"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,830"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "3,160"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,500"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "3,000"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,450"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,190"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,190"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,190"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,190"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,190"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,420"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,780"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,780"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,420"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,860"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,860"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,280"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,980"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,860"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,790"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,790"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,490"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,490"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,490"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,490"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,490"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,990"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,390"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,390"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,390"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,390"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,390"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,390"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "-"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "-"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "-"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,480"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,480"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,480"
+   },
+   {
+    "itemname": "무",
+    "kindname": "고랭지(1개)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,480"
+   }
+  ]
+ }
+}

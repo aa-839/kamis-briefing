@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오늘의 장바구니 물가</title>
+  <meta name="description" content="KAMIS 농축수산물 가격 데이터로 매일 아침 자동 발행되는 장바구니 물가 브리핑. 모든 숫자는 원본 데이터와 자동 대조됩니다.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="오늘의 장바구니 물가">
+  <meta property="og:description" content="KAMIS 가격 데이터로 매일 발행되는 AI 물가 브리핑">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥬</text></svg>">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./">
+        <span class="brand__icon" aria-hidden="true">🥬</span>
+        <span class="brand__name">오늘의 장바구니 물가</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li><a href="#rising">오른 품목</a></li>
+          <li><a href="#falling">내린 품목</a></li>
+          <li><a href="#all-items">전체 시세</a></li>
+          <li><a href="#archive">지난 브리핑</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <!-- 데이터를 불러오는 동안/실패 시 상태를 스크린리더에도 알린다 -->
+    <p class="status" id="status" role="status" aria-live="polite">브리핑을 불러오는 중…</p>
+
+    <div class="mock-banner" id="mock-banner" hidden>
+      <strong>샘플 화면</strong> · 이 페이지의 숫자는 개발용 가짜 데이터이며 실제 시세가 아닙니다.
+    </div>
+
+    <article class="briefing" id="briefing" hidden aria-labelledby="headline">
+      <header class="hero">
+        <p class="hero__date"><time id="briefing-date"></time> 브리핑</p>
+        <h1 class="hero__headline" id="headline"></h1>
+        <div class="hero__meta">
+          <p class="badge" id="verify-badge"></p>
+          <p class="hero__source">
+            <span id="source"></span> · 조사일 <time id="survey-date"></time>
+          </p>
+        </div>
+      </header>
+
+      <section class="section" id="rising" aria-labelledby="rising-title">
+        <h2 class="section__title" id="rising-title">
+          <span aria-hidden="true">📈</span> 많이 오른 품목 <small>1주 전 대비</small>
+        </h2>
+        <ol class="card-grid" id="rising-list"></ol>
+        <p class="empty" hidden>이번 주 크게 오른 품목이 없습니다.</p>
+      </section>
+
+      <section class="section" id="falling" aria-labelledby="falling-title">
+        <h2 class="section__title" id="falling-title">
+          <span aria-hidden="true">📉</span> 지금 사기 좋은 품목 <small>1주 전 대비</small>
+        </h2>
+        <ol class="card-grid" id="falling-list"></ol>
+        <p class="empty" hidden>이번 주 크게 내린 품목이 없습니다.</p>
+      </section>
+
+      <section class="section" id="vs-normal" aria-labelledby="normal-title">
+        <h2 class="section__title" id="normal-title">
+          <span aria-hidden="true">📊</span> 평년과 비교하면 <small>±10% 이상</small>
+        </h2>
+        <div class="normal-grid">
+          <div class="normal-box normal-box--up">
+            <h3>평년보다 비싼 품목</h3>
+            <ul class="chip-list" id="expensive-list"></ul>
+          </div>
+          <div class="normal-box normal-box--down">
+            <h3>평년보다 싼 품목</h3>
+            <ul class="chip-list" id="cheap-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="all-items" aria-labelledby="all-title">
+        <h2 class="section__title" id="all-title">
+          <span aria-hidden="true">🧺</span> 장바구니 전체 시세
+        </h2>
+        <!-- 좁은 화면에서는 표만 가로 스크롤. 페이지 전체가 밀리지 않게 한다 -->
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="all-title">
+          <table class="price-table">
+            <caption class="visually-hidden">품목별 소매가격과 변동률</caption>
+            <thead>
+              <tr>
+                <th scope="col">품목</th>
+                <th scope="col" class="num">가격</th>
+                <th scope="col" class="num">1주 전 대비</th>
+                <th scope="col" class="num">1년 전 대비</th>
+                <th scope="col" class="num">평년 대비</th>
+              </tr>
+            </thead>
+            <tbody id="items-body"></tbody>
+          </table>
+        </div>
+        <p class="note" id="missing-note" hidden></p>
+      </section>
+    </article>
+
+    <section class="section archive" id="archive" aria-labelledby="archive-title" hidden>
+      <h2 class="section__title" id="archive-title">
+        <span aria-hidden="true">🗂️</span> 지난 브리핑
+      </h2>
+      <ol class="archive-list" id="archive-list"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>가격 출처: <a href="https://www.kamis.or.kr" rel="noopener">KAMIS 농산물유통정보</a>(한국농수산식품유통공사)</p>
+      <p>이 브리핑은 KAMIS Open API 데이터로 자동 작성되며, 문장 속 모든 가격·변동률은 발행 전에 원본 데이터와 자동 대조됩니다.</p>
+    </div>
+  </footer>
+
+  <!-- 카드 하나의 틀. JS가 복제해서 내용만 채운다 (HTML 구조는 HTML에 둔다) -->
+  <template id="card-template">
+    <li class="card">
+      <div class="card__head">
+        <h3 class="card__name"></h3>
+        <p class="card__kind"></p>
+      </div>
+      <p class="card__price"><data class="card__price-value"></data> <span class="card__unit"></span></p>
+      <p class="card__change"></p>
+      <figure class="spark">
+        <svg class="spark__svg" viewBox="0 0 200 48" preserveAspectRatio="none" role="img"><title></title></svg>
+        <figcaption class="spark__caption">최근 30일</figcaption>
+      </figure>
+      <p class="card__comment"></p>
+    </li>
+  </template>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[project]
+name = "kamis-mcp"
+version = "0.1.0"
+description = "KAMIS 농축수산물 가격 Open API MCP 서버"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=2.3",
+]
+
+[project.scripts]
+kamis-mcp = "kamis_mcp.server:main"
+kamis-brief = "kamis_mcp.briefing.pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.11.19,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "openpyxl>=3.1.5",
+    "pytest>=9.1.1",
+]

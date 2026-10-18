@@ -1,0 +1,700 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "11,406"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "11,789"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "10,165"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "10,133"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "10,559"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "10,697"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "10,711"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "10,983"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "10,982"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "11,023"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "11,115"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "11,302"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "11,304"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "11,299"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "10,000"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "9,960"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "11,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "11,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "9,260"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "11,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "11,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "11,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "11,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "9,260"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "12,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "12,900"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,560"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,560"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,560"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,560"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "9,560"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "15,100"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "15,100"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,580"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,580"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,580"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,580"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "15,100"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "9,940"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "9,930"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,930"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,930"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,930"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,600"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "9,600"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "8,730"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "9,980"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "12,500"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "12,500"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "12,500"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "12,500"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "12,500"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "12,500"
+   },
+   {
+    "itemname": "깐마늘(국산)",
+    "kindname": "깐마늘(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "12,500"
+   }
+  ]
+ }
+}

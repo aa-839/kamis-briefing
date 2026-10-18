@@ -1,0 +1,1888 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "3,375"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "3,805"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "3,827"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "3,797"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "3,832"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "3,867"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "3,941"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "4,103"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "4,146"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "4,289"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "4,348"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "4,350"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "4,359"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "4,420"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "4,395"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "4,389"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "4,386"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "4,395"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "4,404"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "5,113"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "5,095"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "5,093"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "5,148"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "5,167"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "5,194"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "5,261"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "5,268"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "5,269"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "5,263"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "5,256"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "5,217"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "5,199"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "5,190"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "5,051"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "5,008"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "4,987"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "4,972"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "4,962"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "3,330"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,950"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "3,020"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "3,020"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,270"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "3,270"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "3,300"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "3,090"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "3,060"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "3,060"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "3,060"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "3,300"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "3,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "3,300"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "3,400"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "3,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "3,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "3,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "3,700"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "3,700"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,700"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "3,700"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "3,700"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "3,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "3,400"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,800"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "4,200"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,910"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "4,780"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "3,190"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "3,190"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "3,190"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "3,190"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "3,190"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "3,190"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "5,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "5,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "5,500"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "6,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "6,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "6,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "5,320"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "5,320"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "5,320"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "5,320"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "5,320"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "6,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "6,000"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "3,980"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "5,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "4,600"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "6,130"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "3,990"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,490"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "3,490"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "3,490"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "3,490"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "3,490"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "3,490"
+   },
+   {
+    "itemname": "당근",
+    "kindname": "무세척(국산)(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "3,490"
+   }
+  ]
+ }
+}

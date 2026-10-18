@@ -1,0 +1,637 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "22,522"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "22,595"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "24,012"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "23,561"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "23,436"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "23,107"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "21,280"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "26,498"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "26,458"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "26,643"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "26,563"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "27,048"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "27,476"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "27,424"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "19,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "19,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "19,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "19,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "18,300"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "17,700"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "25,500"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "25,500"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "22,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "22,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "29,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "29,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "24,300"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "24,300"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "21,000"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "21,000"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "21,000"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "21,000"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "21,000"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "16,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "16,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "26,600"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "19,600"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "26,600"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "26,600"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "18,300"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "29,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "29,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "-"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "-"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "-"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "-"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "19,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "23,600"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "22,200"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "17,400"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "24,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "24,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "24,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "24,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "11,900"
+   },
+   {
+    "itemname": "사과",
+    "kindname": "홍로(10개)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "11,900"
+   }
+  ]
+ }
+}

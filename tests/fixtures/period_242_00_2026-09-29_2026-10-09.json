@@ -1,0 +1,700 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,929"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,922"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,722"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,698"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,676"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,682"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,664"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,675"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,677"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,675"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,681"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,664"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,668"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,674"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,160"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,080"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,080"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,530"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,530"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,350"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,350"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,500"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,520"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,520"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,760"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,760"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,760"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,760"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,760"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,280"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,280"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,480"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,480"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "990"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,780"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,780"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,980"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,660"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,660"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,990"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,990"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,990"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,990"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,990"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,650"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,320"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,320"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,320"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,320"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,320"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,320"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,250"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,000"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,000"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,000"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "850"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "850"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,190"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,190"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,190"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,390"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,390"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,390"
+   },
+   {
+    "itemname": "풋고추",
+    "kindname": "풋고추(녹광 등)(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,390"
+   }
+  ]
+ }
+}

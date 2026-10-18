@@ -1,0 +1,905 @@
+{
+  "schema_version": 1,
+  "is_mock": true,
+  "date": "2026-10-13",
+  "survey_date": "2026-10-13",
+  "generated_at": "2026-10-10T13:20:08+09:00",
+  "headline": "고등어가 일주일 새 19.7% 올랐고, 사과(후지)는 12.4% 내렸습니다.",
+  "sections": {
+    "rising": [
+      {
+        "item": "고등어",
+        "kind": "생선",
+        "unit": "1마리",
+        "price": 3830.0,
+        "change_1w_pct": 19.7,
+        "change_1y_pct": 11.7,
+        "vs_normal_pct": -10.9,
+        "comment": "평년보다 10.9% 저렴합니다. 작년 이맘때보다 11.7% 높습니다."
+      },
+      {
+        "item": "토마토",
+        "kind": "토마토",
+        "unit": "1kg",
+        "price": 5640.0,
+        "change_1w_pct": 6.0,
+        "change_1y_pct": 9.3,
+        "vs_normal_pct": -16.4,
+        "comment": "평년보다 16.4% 저렴합니다. 작년 이맘때보다 9.3% 높습니다."
+      },
+      {
+        "item": "바나나",
+        "kind": "수입",
+        "unit": "100g",
+        "price": 340.0,
+        "change_1w_pct": 3.0,
+        "change_1y_pct": 6.2,
+        "vs_normal_pct": -5.6,
+        "comment": "평년보다 5.6% 저렴합니다. 작년 이맘때보다 6.2% 높습니다."
+      }
+    ],
+    "falling": [
+      {
+        "item": "사과(후지)",
+        "kind": "후지",
+        "unit": "10개",
+        "price": 24560.0,
+        "change_1w_pct": -12.4,
+        "change_1y_pct": 6.3,
+        "vs_normal_pct": -15.6,
+        "comment": "평년보다 15.6% 저렴합니다. 작년 이맘때보다 6.3% 높습니다."
+      },
+      {
+        "item": "상추",
+        "kind": "적",
+        "unit": "100g",
+        "price": 1270.0,
+        "change_1w_pct": -8.6,
+        "change_1y_pct": -4.5,
+        "vs_normal_pct": -1.6,
+        "comment": "평년보다 1.6% 저렴합니다. 작년 이맘때보다 4.5% 낮습니다."
+      },
+      {
+        "item": "오징어",
+        "kind": "생선",
+        "unit": "1마리",
+        "price": 6030.0,
+        "change_1w_pct": -6.5,
+        "change_1y_pct": -0.7,
+        "vs_normal_pct": 5.2,
+        "comment": "평년보다 5.2% 비쌉니다. 작년 이맘때보다 0.7% 낮습니다."
+      }
+    ],
+    "vs_normal": {
+      "expensive": [
+        {
+          "item": "애호박",
+          "vs_normal_pct": 21.6
+        },
+        {
+          "item": "시금치",
+          "vs_normal_pct": 13.6
+        },
+        {
+          "item": "양배추",
+          "vs_normal_pct": 12.4
+        },
+        {
+          "item": "배추",
+          "vs_normal_pct": 11.3
+        }
+      ],
+      "cheap": [
+        {
+          "item": "토마토",
+          "vs_normal_pct": -16.4
+        },
+        {
+          "item": "사과(후지)",
+          "vs_normal_pct": -15.6
+        },
+        {
+          "item": "고구마",
+          "vs_normal_pct": -13.6
+        },
+        {
+          "item": "고등어",
+          "vs_normal_pct": -10.9
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "item": "쌀(20kg)",
+      "kind": "20kg",
+      "unit": "20kg",
+      "price": 56980.0,
+      "change_1w_pct": -2.8,
+      "change_1y_pct": -3.6,
+      "vs_normal_pct": 7.1,
+      "comment": null
+    },
+    {
+      "item": "감자",
+      "kind": "감자",
+      "unit": "1kg",
+      "price": 4130.0,
+      "change_1w_pct": -6.1,
+      "change_1y_pct": -9.4,
+      "vs_normal_pct": -1.7,
+      "comment": null
+    },
+    {
+      "item": "고구마",
+      "kind": "밤",
+      "unit": "1kg",
+      "price": 5640.0,
+      "change_1w_pct": -6.3,
+      "change_1y_pct": 0.4,
+      "vs_normal_pct": -13.6,
+      "comment": null
+    },
+    {
+      "item": "배추",
+      "kind": "봄",
+      "unit": "1포기",
+      "price": 5700.0,
+      "change_1w_pct": -0.9,
+      "change_1y_pct": -23.2,
+      "vs_normal_pct": 11.3,
+      "comment": null
+    },
+    {
+      "item": "양배추",
+      "kind": "양배추",
+      "unit": "1포기",
+      "price": 4250.0,
+      "change_1w_pct": -1.2,
+      "change_1y_pct": -3.8,
+      "vs_normal_pct": 12.4,
+      "comment": null
+    },
+    {
+      "item": "무",
+      "kind": "봄",
+      "unit": "1개",
+      "price": 2550.0,
+      "change_1w_pct": -1.9,
+      "change_1y_pct": -0.8,
+      "vs_normal_pct": -7.3,
+      "comment": null
+    },
+    {
+      "item": "대파",
+      "kind": "대파",
+      "unit": "1kg",
+      "price": 3880.0,
+      "change_1w_pct": -4.2,
+      "change_1y_pct": 6.3,
+      "vs_normal_pct": -2.0,
+      "comment": null
+    },
+    {
+      "item": "양파",
+      "kind": "양파",
+      "unit": "1kg",
+      "price": 2880.0,
+      "change_1w_pct": 2.9,
+      "change_1y_pct": 1.4,
+      "vs_normal_pct": -4.3,
+      "comment": null
+    },
+    {
+      "item": "깐마늘",
+      "kind": "깐마늘(국산)",
+      "unit": "1kg",
+      "price": 12740.0,
+      "change_1w_pct": -2.2,
+      "change_1y_pct": -1.5,
+      "vs_normal_pct": 7.1,
+      "comment": null
+    },
+    {
+      "item": "오이",
+      "kind": "가시계통",
+      "unit": "10개",
+      "price": 9810.0,
+      "change_1w_pct": -4.0,
+      "change_1y_pct": -4.9,
+      "vs_normal_pct": 4.5,
+      "comment": null
+    },
+    {
+      "item": "애호박",
+      "kind": "애호박",
+      "unit": "1개",
+      "price": 1970.0,
+      "change_1w_pct": -0.5,
+      "change_1y_pct": 9.4,
+      "vs_normal_pct": 21.6,
+      "comment": null
+    },
+    {
+      "item": "시금치",
+      "kind": "시금치",
+      "unit": "100g",
+      "price": 1340.0,
+      "change_1w_pct": -2.9,
+      "change_1y_pct": 3.1,
+      "vs_normal_pct": 13.6,
+      "comment": null
+    },
+    {
+      "item": "상추",
+      "kind": "적",
+      "unit": "100g",
+      "price": 1270.0,
+      "change_1w_pct": -8.6,
+      "change_1y_pct": -4.5,
+      "vs_normal_pct": -1.6,
+      "comment": null
+    },
+    {
+      "item": "풋고추",
+      "kind": "풋고추(녹광 등)",
+      "unit": "100g",
+      "price": 1380.0,
+      "change_1w_pct": 0.7,
+      "change_1y_pct": 3.8,
+      "vs_normal_pct": -2.8,
+      "comment": null
+    },
+    {
+      "item": "당근",
+      "kind": "당근",
+      "unit": "1kg",
+      "price": 4900.0,
+      "change_1w_pct": -1.6,
+      "change_1y_pct": -5.0,
+      "vs_normal_pct": -0.2,
+      "comment": null
+    },
+    {
+      "item": "토마토",
+      "kind": "토마토",
+      "unit": "1kg",
+      "price": 5640.0,
+      "change_1w_pct": 6.0,
+      "change_1y_pct": 9.3,
+      "vs_normal_pct": -16.4,
+      "comment": null
+    },
+    {
+      "item": "사과(후지)",
+      "kind": "후지",
+      "unit": "10개",
+      "price": 24560.0,
+      "change_1w_pct": -12.4,
+      "change_1y_pct": 6.3,
+      "vs_normal_pct": -15.6,
+      "comment": null
+    },
+    {
+      "item": "배(신고)",
+      "kind": "신고",
+      "unit": "10개",
+      "price": 39580.0,
+      "change_1w_pct": 1.8,
+      "change_1y_pct": -5.6,
+      "vs_normal_pct": -4.3,
+      "comment": null
+    },
+    {
+      "item": "감귤",
+      "kind": "감귤",
+      "unit": "10개",
+      "price": 4940.0,
+      "change_1w_pct": 1.2,
+      "change_1y_pct": -7.7,
+      "vs_normal_pct": 2.9,
+      "comment": null
+    },
+    {
+      "item": "바나나",
+      "kind": "수입",
+      "unit": "100g",
+      "price": 340.0,
+      "change_1w_pct": 3.0,
+      "change_1y_pct": 6.2,
+      "vs_normal_pct": -5.6,
+      "comment": null
+    },
+    {
+      "item": "돼지 삼겹살",
+      "kind": "삼겹살",
+      "unit": "100g",
+      "price": 2680.0,
+      "change_1w_pct": -1.5,
+      "change_1y_pct": 2.7,
+      "vs_normal_pct": -7.3,
+      "comment": null
+    },
+    {
+      "item": "계란(특란 30구)",
+      "kind": "특란30구",
+      "unit": "30구",
+      "price": 6940.0,
+      "change_1w_pct": 1.2,
+      "change_1y_pct": 2.2,
+      "vs_normal_pct": 0.7,
+      "comment": null
+    },
+    {
+      "item": "고등어",
+      "kind": "생선",
+      "unit": "1마리",
+      "price": 3830.0,
+      "change_1w_pct": 19.7,
+      "change_1y_pct": 11.7,
+      "vs_normal_pct": -10.9,
+      "comment": null
+    },
+    {
+      "item": "오징어",
+      "kind": "생선",
+      "unit": "1마리",
+      "price": 6030.0,
+      "change_1w_pct": -6.5,
+      "change_1y_pct": -0.7,
+      "vs_normal_pct": 5.2,
+      "comment": null
+    }
+  ],
+  "missing": [],
+  "history": {
+    "고등어": [
+      {
+        "date": "2026-09-14",
+        "price": 4190.0
+      },
+      {
+        "date": "2026-09-15",
+        "price": 4110.0
+      },
+      {
+        "date": "2026-09-16",
+        "price": 4200.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 4240.0
+      },
+      {
+        "date": "2026-09-18",
+        "price": 4170.0
+      },
+      {
+        "date": "2026-09-21",
+        "price": 4220.0
+      },
+      {
+        "date": "2026-09-22",
+        "price": 4230.0
+      },
+      {
+        "date": "2026-09-23",
+        "price": 4300.0
+      },
+      {
+        "date": "2026-09-24",
+        "price": 4200.0
+      },
+      {
+        "date": "2026-09-25",
+        "price": 4160.0
+      },
+      {
+        "date": "2026-09-28",
+        "price": 4170.0
+      },
+      {
+        "date": "2026-09-29",
+        "price": 4270.0
+      },
+      {
+        "date": "2026-09-30",
+        "price": 4310.0
+      },
+      {
+        "date": "2026-10-01",
+        "price": 4320.0
+      },
+      {
+        "date": "2026-10-02",
+        "price": 4390.0
+      },
+      {
+        "date": "2026-10-05",
+        "price": 4290.0
+      },
+      {
+        "date": "2026-10-06",
+        "price": 4180.0
+      },
+      {
+        "date": "2026-10-07",
+        "price": 4210.0
+      },
+      {
+        "date": "2026-10-08",
+        "price": 4160.0
+      },
+      {
+        "date": "2026-10-09",
+        "price": 4270.0
+      },
+      {
+        "date": "2026-10-12",
+        "price": 4260.0
+      },
+      {
+        "date": "2026-10-13",
+        "price": 4280.0
+      }
+    ],
+    "토마토": [
+      {
+        "date": "2026-09-14",
+        "price": 6180.0
+      },
+      {
+        "date": "2026-09-15",
+        "price": 6050.0
+      },
+      {
+        "date": "2026-09-16",
+        "price": 5990.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 5970.0
+      },
+      {
+        "date": "2026-09-18",
+        "price": 6130.0
+      },
+      {
+        "date": "2026-09-21",
+        "price": 5970.0
+      },
+      {
+        "date": "2026-09-22",
+        "price": 6000.0
+      },
+      {
+        "date": "2026-09-23",
+        "price": 5920.0
+      },
+      {
+        "date": "2026-09-24",
+        "price": 5990.0
+      },
+      {
+        "date": "2026-09-25",
+        "price": 5890.0
+      },
+      {
+        "date": "2026-09-28",
+        "price": 5760.0
+      },
+      {
+        "date": "2026-09-29",
+        "price": 5920.0
+      },
+      {
+        "date": "2026-09-30",
+        "price": 5810.0
+      },
+      {
+        "date": "2026-10-01",
+        "price": 5660.0
+      },
+      {
+        "date": "2026-10-02",
+        "price": 5600.0
+      },
+      {
+        "date": "2026-10-05",
+        "price": 5470.0
+      },
+      {
+        "date": "2026-10-06",
+        "price": 5510.0
+      },
+      {
+        "date": "2026-10-07",
+        "price": 5350.0
+      },
+      {
+        "date": "2026-10-08",
+        "price": 5410.0
+      },
+      {
+        "date": "2026-10-09",
+        "price": 5340.0
+      },
+      {
+        "date": "2026-10-12",
+        "price": 5440.0
+      },
+      {
+        "date": "2026-10-13",
+        "price": 5550.0
+      }
+    ],
+    "바나나": [
+      {
+        "date": "2026-09-14",
+        "price": 330.0
+      },
+      {
+        "date": "2026-09-15",
+        "price": 340.0
+      },
+      {
+        "date": "2026-09-16",
+        "price": 340.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 330.0
+      },
+      {
+        "date": "2026-09-18",
+        "price": 320.0
+      },
+      {
+        "date": "2026-09-21",
+        "price": 330.0
+      },
+      {
+        "date": "2026-09-22",
+        "price": 320.0
+      },
+      {
+        "date": "2026-09-23",
+        "price": 310.0
+      },
+      {
+        "date": "2026-09-24",
+        "price": 310.0
+      },
+      {
+        "date": "2026-09-25",
+        "price": 320.0
+      },
+      {
+        "date": "2026-09-28",
+        "price": 320.0
+      },
+      {
+        "date": "2026-09-29",
+        "price": 320.0
+      },
+      {
+        "date": "2026-09-30",
+        "price": 330.0
+      },
+      {
+        "date": "2026-10-01",
+        "price": 320.0
+      },
+      {
+        "date": "2026-10-02",
+        "price": 320.0
+      },
+      {
+        "date": "2026-10-05",
+        "price": 330.0
+      },
+      {
+        "date": "2026-10-06",
+        "price": 330.0
+      },
+      {
+        "date": "2026-10-07",
+        "price": 320.0
+      },
+      {
+        "date": "2026-10-08",
+        "price": 320.0
+      },
+      {
+        "date": "2026-10-09",
+        "price": 320.0
+      },
+      {
+        "date": "2026-10-12",
+        "price": 320.0
+      },
+      {
+        "date": "2026-10-13",
+        "price": 310.0
+      }
+    ],
+    "사과(후지)": [
+      {
+        "date": "2026-09-14",
+        "price": 27930.0
+      },
+      {
+        "date": "2026-09-15",
+        "price": 27790.0
+      },
+      {
+        "date": "2026-09-16",
+        "price": 28520.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 29360.0
+      },
+      {
+        "date": "2026-09-18",
+        "price": 29560.0
+      },
+      {
+        "date": "2026-09-21",
+        "price": 29630.0
+      },
+      {
+        "date": "2026-09-22",
+        "price": 28810.0
+      },
+      {
+        "date": "2026-09-23",
+        "price": 29250.0
+      },
+      {
+        "date": "2026-09-24",
+        "price": 29730.0
+      },
+      {
+        "date": "2026-09-25",
+        "price": 29460.0
+      },
+      {
+        "date": "2026-09-28",
+        "price": 30110.0
+      },
+      {
+        "date": "2026-09-29",
+        "price": 29870.0
+      },
+      {
+        "date": "2026-09-30",
+        "price": 29160.0
+      },
+      {
+        "date": "2026-10-01",
+        "price": 28950.0
+      },
+      {
+        "date": "2026-10-02",
+        "price": 29580.0
+      },
+      {
+        "date": "2026-10-05",
+        "price": 30220.0
+      },
+      {
+        "date": "2026-10-06",
+        "price": 30660.0
+      },
+      {
+        "date": "2026-10-07",
+        "price": 30270.0
+      },
+      {
+        "date": "2026-10-08",
+        "price": 31160.0
+      },
+      {
+        "date": "2026-10-09",
+        "price": 31940.0
+      },
+      {
+        "date": "2026-10-12",
+        "price": 32810.0
+      },
+      {
+        "date": "2026-10-13",
+        "price": 31880.0
+      }
+    ],
+    "상추": [
+      {
+        "date": "2026-09-14",
+        "price": 1200.0
+      },
+      {
+        "date": "2026-09-15",
+        "price": 1170.0
+      },
+      {
+        "date": "2026-09-16",
+        "price": 1160.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 1150.0
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1130.0
+      },
+      {
+        "date": "2026-09-21",
+        "price": 1160.0
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1170.0
+      },
+      {
+        "date": "2026-09-23",
+        "price": 1180.0
+      },
+      {
+        "date": "2026-09-24",
+        "price": 1160.0
+      },
+      {
+        "date": "2026-09-25",
+        "price": 1190.0
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1210.0
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1180.0
+      },
+      {
+        "date": "2026-09-30",
+        "price": 1170.0
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1190.0
+      },
+      {
+        "date": "2026-10-02",
+        "price": 1210.0
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1200.0
+      },
+      {
+        "date": "2026-10-06",
+        "price": 1190.0
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1170.0
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1190.0
+      },
+      {
+        "date": "2026-10-09",
+        "price": 1180.0
+      },
+      {
+        "date": "2026-10-12",
+        "price": 1190.0
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1200.0
+      }
+    ],
+    "오징어": [
+      {
+        "date": "2026-09-14",
+        "price": 5820.0
+      },
+      {
+        "date": "2026-09-15",
+        "price": 5710.0
+      },
+      {
+        "date": "2026-09-16",
+        "price": 5730.0
+      },
+      {
+        "date": "2026-09-17",
+        "price": 5890.0
+      },
+      {
+        "date": "2026-09-18",
+        "price": 6010.0
+      },
+      {
+        "date": "2026-09-21",
+        "price": 6110.0
+      },
+      {
+        "date": "2026-09-22",
+        "price": 6140.0
+      },
+      {
+        "date": "2026-09-23",
+        "price": 6240.0
+      },
+      {
+        "date": "2026-09-24",
+        "price": 6250.0
+      },
+      {
+        "date": "2026-09-25",
+        "price": 6350.0
+      },
+      {
+        "date": "2026-09-28",
+        "price": 6260.0
+      },
+      {
+        "date": "2026-09-29",
+        "price": 6390.0
+      },
+      {
+        "date": "2026-09-30",
+        "price": 6480.0
+      },
+      {
+        "date": "2026-10-01",
+        "price": 6320.0
+      },
+      {
+        "date": "2026-10-02",
+        "price": 6410.0
+      },
+      {
+        "date": "2026-10-05",
+        "price": 6510.0
+      },
+      {
+        "date": "2026-10-06",
+        "price": 6320.0
+      },
+      {
+        "date": "2026-10-07",
+        "price": 6470.0
+      },
+      {
+        "date": "2026-10-08",
+        "price": 6400.0
+      },
+      {
+        "date": "2026-10-09",
+        "price": 6310.0
+      },
+      {
+        "date": "2026-10-12",
+        "price": 6420.0
+      },
+      {
+        "date": "2026-10-13",
+        "price": 6540.0
+      }
+    ]
+  },
+  "verification": {
+    "checked": 14,
+    "matched": 14,
+    "passed": true,
+    "failures": []
+  },
+  "writer": "TemplateWriter",
+  "source": "KAMIS 소매가격(전국 평균, 상품 기준)"
+}

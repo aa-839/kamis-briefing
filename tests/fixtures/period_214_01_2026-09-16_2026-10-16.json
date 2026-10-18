@@ -1,0 +1,1888 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,950"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,812"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,771"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,737"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,704"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,698"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,543"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,443"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,386"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,123"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,096"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,078"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,038"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,036"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,054"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,042"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,025"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "987"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "983"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,951"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,948"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,956"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,926"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,914"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,909"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,892"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,834"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,785"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,743"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,711"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,685"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,678"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,680"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,654"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,645"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,618"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "1,588"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,565"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,330"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,250"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,250"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,080"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,080"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,080"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "910"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "830"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "830"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "830"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,830"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,370"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,370"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,250"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,250"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,190"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,190"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,190"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,050"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,050"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,050"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "950"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "820"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "820"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "820"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "820"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,280"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,690"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,690"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,520"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,520"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,520"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,260"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,260"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,260"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,260"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,260"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,260"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "926"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "926"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,280"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,280"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,280"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,280"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,280"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "767"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "366"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "366"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "366"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "366"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "453"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "453"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "453"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "453"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,730"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,070"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,070"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,070"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,070"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "1,070"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,070"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,290"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,240"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,900"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,490"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,650"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "1,650"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,650"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,930"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,930"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,800"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,660"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,530"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,250"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,250"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,530"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,150"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,200"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,000"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "800"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "750"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "750"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,320"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,520"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,520"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,520"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "893"
+   },
+   {
+    "itemname": "상추",
+    "kindname": "적(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "893"
+   }
+  ]
+ }
+}

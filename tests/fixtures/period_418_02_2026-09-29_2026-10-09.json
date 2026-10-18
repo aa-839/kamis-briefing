@@ -1,0 +1,574 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "331"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "328"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "328"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "328"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "327"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "327"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "332"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "339"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "339"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "337"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "334"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "329"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "328"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "328"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "320"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "330"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "306"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "306"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "306"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "306"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "306"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "306"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "331"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "326"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "326"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "362"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "362"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "362"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "362"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "326"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "415"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "-"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "271"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "271"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "271"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "271"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "271"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "271"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "248"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "248"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "248"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "270"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "270"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "270"
+   },
+   {
+    "itemname": "바나나",
+    "kindname": "수입(100g)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "270"
+   }
+  ]
+ }
+}

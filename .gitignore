@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+
+# 공모전 자료·강의 자료·개인 학습 자료 (공개 저장소에 올리지 않음)
+*.pdf
+*.hwp
+*.jpg
+*.ipynb
+study/
+# KAMIS에서 받은 원본 코드표. 변환 결과(src/kamis_mcp/data/codes.json)만 올린다
+reference/
+# 로컬에서 만든 브리핑 출력
+/briefings/

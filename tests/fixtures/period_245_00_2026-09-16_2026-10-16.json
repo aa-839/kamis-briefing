@@ -1,0 +1,1888 @@
+{
+ "data": {
+  "error_code": "000",
+  "item": [
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,831"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,876"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,874"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,908"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,910"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,929"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,049"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,061"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,078"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,123"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,166"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,307"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,359"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,058"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,053"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,052"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,074"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,252"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평균",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,214"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,167"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,173"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,164"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,157"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,157"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,146"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,163"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,166"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,168"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,183"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,197"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,218"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,216"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,216"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,242"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,246"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,273"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,284"
+   },
+   {
+    "itemname": [],
+    "kindname": [],
+    "countyname": "평년",
+    "marketname": [],
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,292"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "경동",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,310"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,260"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,360"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,360"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,280"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,280"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,280"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "복조리",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,280"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,960"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,960"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,830"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,830"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,830"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,830"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "1,960"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,960"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,400"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,090"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "B`-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,620"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,210"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,210"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,760"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,760"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,760"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "1,760"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,480"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "C-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,480"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,430"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,430"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,430"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,430"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,430"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,490"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "3,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,190"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,190"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,190"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,190"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,390"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "E-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,390"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,930"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "1,770"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,210"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,210"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "I-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,210"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "1,990"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "K-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "2,660"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/16",
+    "price": "2,190"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/17",
+    "price": "2,190"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/18",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/21",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/22",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/23",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/28",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/29",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "09/30",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/01",
+    "price": "1,380"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/02",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/06",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/07",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/08",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/12",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/13",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/14",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/15",
+    "price": "2,320"
+   },
+   {
+    "itemname": "양파",
+    "kindname": "양파(1kg)",
+    "countyname": "서울",
+    "marketname": "L-유통",
+    "yyyy": "2026",
+    "regday": "10/16",
+    "price": "1,660"
+   }
+  ]
+ }
+}
