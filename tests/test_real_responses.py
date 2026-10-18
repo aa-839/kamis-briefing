@@ -90,3 +90,24 @@ def test_briefing_from_real_data_on_sunday(kamis):
 def test_already_published_survey_day_is_skipped(kamis):
     b = run(build_briefing(kamis, TemplateWriter(), date(2026, 10, 18), skip_dates={"2026-10-16"}))
     assert b is None
+
+
+def test_auth_error_is_not_swallowed():
+    """인증 실패를 '가격이 없다'로 뭉개지 않고 그대로 알린다(GitHub Actions에서 실제로 겪음)."""
+    import httpx
+
+    from kamis_mcp.client import KamisClient
+
+    deny = httpx.MockTransport(lambda req: httpx.Response(200, json={"data": ["900"]}))
+    client = KamisClient(cert_key="wrong", cert_id="id", transport=deny)
+    with pytest.raises(KamisError) as e:
+        run(build_briefing(client, TemplateWriter(), FRIDAY))
+    assert e.value.code == "900"
+
+
+def test_missing_env_names_the_variable(monkeypatch):
+    from kamis_mcp.client import KamisClient
+
+    monkeypatch.delenv("KAMIS_CERT_ID", raising=False)
+    with pytest.raises(KamisError, match="KAMIS_CERT_ID"):
+        run(KamisClient(cert_key=" key \n").daily_by_category("200", day=FRIDAY))

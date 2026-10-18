@@ -24,6 +24,7 @@ ERROR_MESSAGES = {
     "001": "해당 조건의 데이터가 없습니다",
     "200": "요청 파라미터가 잘못되었습니다",
     "900": "인증되지 않은 요청입니다(API 키 확인 필요)",
+    "NOJSON": "KAMIS가 데이터 대신 다른 응답을 보냈습니다",
 }
 
 # 일별 데이터 API는 오늘 기준 최근 1년까지만 조회된다(API 문서).
@@ -31,9 +32,10 @@ DAILY_LOOKBACK_DAYS = 365
 
 
 class KamisError(Exception):
-    def __init__(self, code: str, action: str):
+    def __init__(self, code: str, action: str, detail: str | None = None):
         self.code = code
-        super().__init__(f"[{action}] {code}: {ERROR_MESSAGES.get(code, '알 수 없는 오류')}")
+        msg = f"[{action}] {code}: {ERROR_MESSAGES.get(code, '알 수 없는 오류')}"
+        super().__init__(f"{msg} ({detail})" if detail else msg)
 
 
 def load_dotenv(path: Path = Path(".env")) -> None:
@@ -89,8 +91,9 @@ def _as_list(v) -> list:
 class KamisClient:
     def __init__(self, cert_key: str | None = None, cert_id: str | None = None, timeout: float = 20.0,
                  transport: httpx.AsyncBaseTransport | None = None):
-        self.cert_key = cert_key or os.environ.get("KAMIS_CERT_KEY")
-        self.cert_id = cert_id or os.environ.get("KAMIS_CERT_ID")
+        # 복사·붙여넣기로 앞뒤 공백·줄바꿈이 섞여 들어와도 인증되도록 다듬는다
+        self.cert_key = (cert_key or os.environ.get("KAMIS_CERT_KEY") or "").strip() or None
+        self.cert_id = (cert_id or os.environ.get("KAMIS_CERT_ID") or "").strip() or None
         # transport: 테스트에서 저장해 둔 실제 응답을 돌려주는 가짜 네트워크를 끼울 때 쓴다
         self._http = httpx.AsyncClient(timeout=timeout, headers={"User-Agent": "kamis-mcp/0.1"}, transport=transport)
 
@@ -100,7 +103,8 @@ class KamisClient:
     async def call(self, action: str, **params) -> dict:
         """action 호출 후 원본 JSON 반환. 오류 코드면 KamisError."""
         if not (self.cert_key and self.cert_id):
-            raise KamisError("900", action)
+            missing = [n for n, v in (("KAMIS_CERT_KEY", self.cert_key), ("KAMIS_CERT_ID", self.cert_id)) if not v]
+            raise KamisError("900", action, f"환경변수 {', '.join(missing)}가 비어 있습니다")
         query = {
             "action": action,
             "p_cert_key": self.cert_key,
@@ -110,7 +114,13 @@ class KamisClient:
         }
         resp = await self._http.get(BASE_URL, params=query)
         resp.raise_for_status()
-        body = resp.json()  # charset=utf-8로 온다(실제 응답 헤더 확인)
+        try:
+            body = resp.json()  # charset=utf-8로 온다(실제 응답 헤더 확인)
+        except ValueError:
+            # 정상이면 항상 JSON. 웹페이지가 오면 차단·점검 안내일 가능성이 크다(예: 해외 IP 차단)
+            snippet = resp.text[:120].replace("
+", " ")
+            raise KamisError("NOJSON", action, f"JSON이 아닌 응답(HTTP {resp.status_code}): {snippet}")
         code = _error_code(body)
         if code and code != "000":
             raise KamisError(code, action)

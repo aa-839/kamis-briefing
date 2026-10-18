@@ -61,19 +61,25 @@ async def _fill_1w_gaps(client, facts: list[ItemFact]) -> None:
 
 
 async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], list[str]]:
-    """day부터 거슬러 올라가며 장바구니 절반 이상이 조사된 가장 최근 날을 찾는다."""
+    """day부터 거슬러 올라가며 장바구니 절반 이상이 조사된 가장 최근 날을 찾는다.
+
+    001(데이터 없음)은 주말·공휴일에 정상이라 넘어가지만, 인증 실패(900) 같은 오류는 바로 멈춘다.
+    오류를 삼키면 '가격이 없습니다'만 남아 진짜 원인을 알 수 없게 된다.
+    """
     for back in range(SURVEY_LOOKBACK_DAYS + 1):
         d = day - timedelta(days=back)
         rows_by_category = {}
         for cat in CATEGORIES:
             try:
                 rows_by_category[cat] = await client.daily_by_category(cat, "retail", None, d)
-            except KamisError:
+            except KamisError as e:
+                if e.code != "001":
+                    raise
                 rows_by_category[cat] = []
         facts, missing = build_facts(rows_by_category)
         if len(facts) >= MIN_COVERAGE:
             return d, facts, missing
-    raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 조사된 가격이 없습니다(API 오류일 수 있음).")
+    raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 조사된 가격이 없습니다(KAMIS 응답: 데이터 없음).")
 
 
 def _section_item(f: ItemFact, comment: str | None) -> dict:
