@@ -34,6 +34,7 @@
 | `writer` | string | 문장을 쓴 방식: `LLMWriter` 또는 `TemplateWriter` |
 | `writing` | object \| null | LLM 작성 기록 `{model, rewrites, fallback, error?}`. `rewrites`=검증 실패로 다시 쓴 횟수, `fallback`=끝내 실패해 템플릿 문장으로 대체됐는지. 템플릿만 쓴 날은 `null` |
 | `source` | string | 출처 문구. 화면에 그대로 표기 |
+| `cause_search` | object \| null | 원인 찾기 기록 `{model, searched, found, rejected[], errors[]}`. `rejected`는 탈락한 인용과 이유 |
 
 ### Item
 
@@ -48,6 +49,20 @@
 | `change_1y_pct` | number \| null | 1년 전 대비 |
 | `vs_normal_pct` | number \| null | 평년 대비 |
 | `comment` | string \| null | 품목 설명 문장 |
+| `cause` | Cause \| null | 가격 변동 원인(rising·falling 품목만). 근거가 확인된 것만 있고, 없으면 `null` |
+
+### Cause
+
+기사 원문 한 문장을 그대로 인용한다. 인용문이 기사 본문에 있는지, 이 품목·이 방향·이 시기의 원인인지 검사를 통과한 것만 실린다.
+
+| 필드 | 타입 | 설명 |
+|---|---|---|
+| `summary` | string | 원인 요약 (예: `"산지 교체로 인한 공급 감소"`) |
+| `quote` | string | 기사 원문 인용 (150자 이하) |
+| `url`, `title` | string | 기사 주소·제목. **인용과 함께 항상 출처로 표시** |
+| `publisher` | string | 언론사·기관 이름 |
+| `published` | `"YYYY-MM-DD"` \| null | 기사 날짜 |
+| `grade` | string | AI 심사가 적절하다고 본 이유(내부 기록용) |
 
 ## 주의
 

@@ -108,10 +108,35 @@ function renderCards(list, items, history, surveyDate) {
       fillChange(card.querySelector('.card__change'), item.change_1w_pct, base ? `${base.long}보다` : '1주 전보다', base);
       drawSparkline(card.querySelector('.spark__svg'), history?.[item.item], item.item);
       card.querySelector('.card__comment').textContent = item.comment ?? '';
+      fillCause(card.querySelector('.cause'), item.cause);
       return card;
     }),
   );
   list.nextElementSibling.hidden = items.length > 0; // .empty 안내문
+}
+
+/** 원인 인용 블록. 인용문·출처는 기사에서 온 글이라 반드시 textContent로 넣는다. */
+function fillCause(box, cause) {
+  if (!cause) return; // 근거가 확인되지 않은 품목은 원인을 보여 주지 않는다
+  box.querySelector('.cause__summary strong').textContent = cause.summary;
+  const quote = box.querySelector('.cause__quote');
+  quote.cite = cause.url;
+  quote.querySelector('p').textContent = cause.quote;
+  const link = box.querySelector('.cause__source a');
+  link.href = safeUrl(cause.url);
+  const date = cause.published ? ` · ${cause.published.slice(5).replace('-', '/')}` : '';
+  link.textContent = `${cause.publisher}${date} — ${cause.title}`;
+  box.hidden = false;
+}
+
+/** http(s) 주소만 링크로 쓴다(javascript: 같은 주소가 섞여 들어와도 실행되지 않게). */
+function safeUrl(url) {
+  try {
+    const u = new URL(url);
+    return u.protocol === 'https:' || u.protocol === 'http:' ? u.href : '#';
+  } catch {
+    return '#';
+  }
 }
 
 function renderChips(list, items) {

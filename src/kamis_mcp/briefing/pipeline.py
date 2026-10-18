@@ -11,6 +11,7 @@
 import argparse
 import asyncio
 import json
+import os
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -20,6 +21,7 @@ from .basket import BASKET, CATEGORIES
 from .facts import ItemFact, build_facts, select, set_1w_base
 from .mock import MockKamisClient
 from .verify import verify
+from .causes import CauseFinder
 from .llm_writer import LLMWriter
 from .writer import TemplateWriter, Writer
 
@@ -82,7 +84,7 @@ async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], lis
     raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 조사된 가격이 없습니다(KAMIS 응답: 데이터 없음).")
 
 
-def _section_item(f: ItemFact, comment: str | None) -> dict:
+def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None) -> dict:
     return {
         "item": f.label,
         "kind": f.kind_name,
@@ -93,11 +95,12 @@ def _section_item(f: ItemFact, comment: str | None) -> dict:
         "change_1y_pct": f.change_1y_pct,
         "vs_normal_pct": f.vs_normal_pct,
         "comment": comment,
+        "cause": cause,
     }
 
 
 async def build_briefing(client, writer: Writer, day: date, is_mock: bool = False,
-                         skip_dates: set[str] = frozenset()) -> dict | None:
+                         skip_dates: set[str] = frozenset(), cause_finder=None) -> dict | None:
     """day 기준 가장 최근 조사일의 브리핑. 그 조사일이 skip_dates에 있으면(이미 발행) None."""
     survey_day, facts, missing = await _find_survey_day(client, day)
     if survey_day.isoformat() in skip_dates:
@@ -108,6 +111,11 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
     written = writer.write(selection)
     check = verify(written, selection)
     comments = written["comments"]
+
+    # 많이 오르고 내린 품목의 원인: 기사 원문 인용 + 출처. 근거가 확인된 것만 싣는다
+    causes, cause_log = {}, None
+    if cause_finder is not None:
+        causes, cause_log = cause_finder.find_all(selection["rising"] + selection["falling"], survey_day)
 
     history = {}
     for f in selection["rising"] + selection["falling"]:
@@ -124,8 +132,8 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "headline": written["headline"],
         "sections": {
-            "rising": [_section_item(f, comments.get(f.label)) for f in selection["rising"]],
-            "falling": [_section_item(f, comments.get(f.label)) for f in selection["falling"]],
+            "rising": [_section_item(f, comments.get(f.label), causes.get(f.label)) for f in selection["rising"]],
+            "falling": [_section_item(f, comments.get(f.label), causes.get(f.label)) for f in selection["falling"]],
             "vs_normal": {
                 "expensive": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["expensive"]],
                 "cheap": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["cheap"]],
@@ -138,6 +146,8 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "writer": type(writer).__name__,
         # LLM 작성기의 실행 기록: 어떤 모델이 썼고, 검증 실패로 몇 번 다시 썼고, 결국 템플릿으로 대체됐는지
         "writing": getattr(writer, "last_run", None) or None,
+        # 원인 찾기 기록: 몇 품목을 찾아 몇 개를 실었고, 무엇을 왜 탈락시켰는지
+        "cause_search": cause_log,
         "source": SOURCE,
     }
 
@@ -167,10 +177,13 @@ async def _run(args) -> None:
     day = date.fromisoformat(args.date) if args.date else date.today()
     client = MockKamisClient() if args.mock else KamisClient()
     writer = TemplateWriter() if args.writer == "template" else LLMWriter(args.model)
+    finder = None
+    if args.writer == "llm" and not args.no_causes and os.environ.get("EXA_API_KEY"):
+        finder = CauseFinder(args.model)
     out = Path(args.out)
     skip = {p.stem for p in out.glob("????-??-??.json")} if args.skip_existing else set()
     try:
-        briefing = await build_briefing(client, writer, day, is_mock=args.mock, skip_dates=skip)
+        briefing = await build_briefing(client, writer, day, is_mock=args.mock, skip_dates=skip, cause_finder=finder)
     finally:
         await client.aclose()
     if briefing is None:
@@ -183,6 +196,9 @@ async def _run(args) -> None:
         print(f"작성: {w['model']}, 재작성 {w['rewrites']}번{', 템플릿으로 대체' if w['fallback'] else ''}")
         if w.get("error"):
             print(f"  모델 오류: {w['error']}")
+    if c := briefing["cause_search"]:
+        print(f"원인: {c['found']}/{c['searched']}개 품목 근거 확인, 탈락 {len(c['rejected'])}건"
+              + (f", 오류 {len(c['errors'])}건" if c["errors"] else ""))
     print(briefing["headline"])
 
 
@@ -193,6 +209,7 @@ def main() -> None:
     p.add_argument("--date", help="YYYY-MM-DD (기본: 오늘)")
     p.add_argument("--out", default="briefings", help="출력 폴더 (기본: briefings)")
     p.add_argument("--writer", choices=["llm", "template"], default="llm", help="문장 작성 방식 (기본: llm)")
+    p.add_argument("--no-causes", action="store_true", help="원인 찾기(뉴스 검색) 생략")
     p.add_argument("--skip-existing", action="store_true",
                    help="가장 최근 조사일 브리핑이 출력 폴더에 이미 있으면 만들지 않음 (자동 실행용)")
     p.add_argument("--model", help="'회사:모델' (기본: .env의 BRIEF_MODEL, 없으면 openai:gpt-4.1-mini)")

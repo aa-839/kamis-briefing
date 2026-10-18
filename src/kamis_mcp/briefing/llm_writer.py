@@ -49,6 +49,19 @@ SYSTEM_PROMPT = """당신은 소비자를 위한 '오늘의 장바구니 물가'
 - comments: rising·falling에 있는 품목마다 정확히 하나씩, 1~2문장. item에는 사실의 label을 그대로 씁니다."""
 
 
+def model_name_from_env(model: str | None = None) -> str:
+    return model or os.environ.get("BRIEF_MODEL") or DEFAULT_MODEL
+
+
+def structured_llm(model_name: str, schema: type[BaseModel]):
+    """'회사:모델' 문자열로 모델을 만들고, 답을 schema(Pydantic) 모양으로 받게 한다."""
+    from langchain.chat_models import init_chat_model
+
+    # temperature=0(매번 비슷한 문장)은 지원하는 모델에만. gpt-5 계열·최신 Claude는 값을 바꾸면 오류가 난다
+    kwargs = {"temperature": 0} if model_name.split(":")[-1].startswith("gpt-4") else {}
+    return init_chat_model(model_name, **kwargs).with_structured_output(schema)
+
+
 class ItemComment(BaseModel):
     item: str = Field(description="사실의 label 그대로 (예: '양배추', '배(신고)')")
     comment: str = Field(description="1~2문장 코멘트")
@@ -94,7 +107,7 @@ class LLMWriter:
     """Writer 프로토콜 구현. pipeline은 write()만 부른다."""
 
     def __init__(self, model: str | None = None, max_rewrites: int = MAX_REWRITES):
-        self.model_name = model or os.environ.get("BRIEF_MODEL") or DEFAULT_MODEL
+        self.model_name = model_name_from_env(model)
         self.max_rewrites = max_rewrites
         self._llm = None  # 처음 쓸 때 만든다(테스트에서는 _generate를 바꿔 끼워 모델 없이 돈다)
         self.graph = self._build_graph()
@@ -104,11 +117,7 @@ class LLMWriter:
 
     def _generate(self, messages: list[tuple[str, str]]) -> Draft:
         if self._llm is None:
-            from langchain.chat_models import init_chat_model
-
-            # temperature=0(매번 비슷한 문장)은 지원하는 모델에만. gpt-5 계열·최신 Claude는 값을 바꾸면 오류가 난다
-            kwargs = {"temperature": 0} if self.model_name.split(":")[-1].startswith("gpt-4") else {}
-            self._llm = init_chat_model(self.model_name, **kwargs).with_structured_output(Draft)
+            self._llm = structured_llm(self.model_name, Draft)
         return self._llm.invoke(messages)
 
     @staticmethod

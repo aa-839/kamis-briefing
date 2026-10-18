@@ -123,6 +123,7 @@
     <div class="container">
       <p>가격 출처: <a href="https://www.kamis.or.kr" rel="noopener">KAMIS 농산물유통정보</a>(한국농수산식품유통공사)</p>
       <p>이 브리핑은 KAMIS Open API 데이터로 자동 작성되며, 문장 속 모든 가격·변동률은 발행 전에 원본 데이터와 자동 대조됩니다.</p>
+      <p>"왜?"의 원인 설명은 언론·공공기관 기사 원문을 그대로 인용한 것이며, 인용이 기사에 실제로 있는지와 해당 품목·시기의 원인인지를 자동 검사한 경우에만 싣습니다.</p>
     </div>
   </footer>
 
@@ -140,6 +141,12 @@
         <figcaption class="spark__caption">최근 30일</figcaption>
       </figure>
       <p class="card__comment"></p>
+      <!-- 가격 변동 원인: 기사 원문 인용 + 출처. 근거가 확인된 품목에만 보인다 -->
+      <div class="cause" hidden>
+        <p class="cause__summary"><span class="cause__label">왜?</span> <strong></strong></p>
+        <blockquote class="cause__quote"><p></p></blockquote>
+        <p class="cause__source"><a target="_blank" rel="noopener noreferrer"></a></p>
+      </div>
     </li>
   </template>
 </body>

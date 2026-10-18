@@ -42,6 +42,7 @@ jobs:
           KAMIS_CERT_ID: ${{ secrets.KAMIS_CERT_ID }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}  # 원인 찾기(뉴스 검색). 없으면 원인 없이 발행
           BRIEF_MODEL: ${{ vars.BRIEF_MODEL }}
           LANGSMITH_API_KEY: ${{ secrets.LANGSMITH_API_KEY }}
           LANGSMITH_TRACING: ${{ secrets.LANGSMITH_API_KEY != '' && 'true' || 'false' }}
