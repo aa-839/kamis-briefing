@@ -269,6 +269,16 @@ main { padding-block: 24px 64px; outline: none; }
 /* 표 안에서는 배경 없이 글자색만 */
 .price-table .change { padding: 0; background: none; font-size: inherit; font-weight: 600; }
 
+/* ---------- 영양성분 ---------- */
+.nutri { display: grid; gap: 4px; font-size: 0.8125rem; }
+.nutri[hidden] { display: none; }
+.nutri__title { font-weight: 700; font-size: 0.75rem; color: var(--text-muted); }
+.nutri__base { font-weight: 500; }
+.nutri__list { display: flex; flex-wrap: wrap; gap: 4px; }
+.nutri__list li { padding: 2px 8px; border-radius: 999px; background: var(--surface-2); }
+.nutri__list b { font-weight: 700; font-variant-numeric: tabular-nums; }
+.nutri__source { font-size: 0.6875rem; color: var(--text-muted); }
+
 /* ---------- 원인 인용 ---------- */
 .cause {
   display: grid;

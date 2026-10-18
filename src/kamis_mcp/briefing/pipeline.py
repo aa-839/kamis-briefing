@@ -23,6 +23,7 @@ from .mock import MockKamisClient
 from .verify import verify
 from .causes import CauseFinder
 from .llm_writer import LLMWriter
+from .nutrition import nutrition_for
 from .seasonal import seasonal_info
 from .writer import TemplateWriter, Writer
 
@@ -85,7 +86,8 @@ async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], lis
     raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 조사된 가격이 없습니다(KAMIS 응답: 데이터 없음).")
 
 
-def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, season: dict | None = None) -> dict:
+def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, season: dict | None = None,
+                  nutrition: dict | None = None) -> dict:
     return {
         "item": f.label,
         "kind": f.kind_name,
@@ -98,6 +100,7 @@ def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, s
         "comment": comment,
         "cause": cause,
         "season": season,
+        "nutrition": nutrition,
     }
 
 
@@ -136,10 +139,10 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "headline": written["headline"],
         "sections": {
-            "rising": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label))
-                       for f in selection["rising"]],
-            "falling": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label))
-                        for f in selection["falling"]],
+            "rising": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label),
+                                     nutrition_for(f.label, survey_day.month)) for f in selection["rising"]],
+            "falling": [_section_item(f, comments.get(f.label), causes.get(f.label), seasons.get(f.label),
+                                      nutrition_for(f.label, survey_day.month)) for f in selection["falling"]],
             "vs_normal": {
                 "expensive": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["expensive"]],
                 "cheap": [{"item": f.label, "vs_normal_pct": f.vs_normal_pct} for f in selection["cheap"]],

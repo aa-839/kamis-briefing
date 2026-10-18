@@ -108,11 +108,30 @@ function renderCards(list, items, history, surveyDate) {
       fillChange(card.querySelector('.card__change'), item.change_1w_pct, base ? `${base.long}보다` : '1주 전보다', base);
       drawSparkline(card.querySelector('.spark__svg'), history?.[item.item], item.item);
       card.querySelector('.card__comment').textContent = item.comment ?? '';
+      fillNutrition(card.querySelector('.nutri'), item.nutrition);
       fillCause(card.querySelector('.cause'), item.cause);
       return card;
     }),
   );
   list.nextElementSibling.hidden = items.length > 0; // .empty 안내문
+}
+
+/** 영양성분 100g당. 값은 성분표 원본 그대로 보여 주고, 어떤 식품 항목 기준인지 밝힌다. */
+function fillNutrition(box, n) {
+  if (!n?.values?.length) return;
+  box.querySelector('.nutri__base').textContent = `${n.base}당`;
+  box.querySelector('.nutri__list').replaceChildren(
+    ...n.values.map(({ name, value, unit }) => {
+      const li = document.createElement('li');
+      const b = document.createElement('b');
+      b.textContent = `${value}${unit}`;
+      li.append(`${name} `, b);
+      return li;
+    }),
+  );
+  box.querySelector('.nutri__source').textContent =
+    `${n.source} · ${n.food_name.replaceAll('_', ' ')} 기준`;
+  box.hidden = false;
 }
 
 /** 원인 인용 블록. 인용문·출처는 기사에서 온 글이라 반드시 textContent로 넣는다. */

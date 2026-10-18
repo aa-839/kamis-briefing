@@ -51,6 +51,18 @@
 | `comment` | string \| null | 품목 설명 문장 |
 | `cause` | Cause \| null | 가격 변동 원인(rising·falling 품목만). 근거가 확인된 것만 있고, 없으면 `null` |
 | `season` | Season \| null | 예년 저가철 정보. 축산물이나 월별 자료가 모자라면 `null` |
+| `nutrition` | Nutrition \| null | 영양성분 100g당(rising·falling 품목만). 공식 성분표 값 그대로 |
+
+### Nutrition
+
+공공데이터포털 「전국통합식품영양성분정보(원재료성식품) 표준데이터」(농촌진흥청 국가표준식품성분표, 국립수산과학원 표준수산물성분표). 값은 원본 문자열 그대로, 효능 문구 없음.
+
+| 필드 | 타입 | 설명 |
+|---|---|---|
+| `base` | string | 기준량 (`"100g"`) |
+| `values` | `{name, value, unit}`[] | 성분 (열량·단백질·식이섬유·비타민C·칼륨 중 값이 있는 것). `value`는 원본 문자열 |
+| `food_name` | string | 성분표에서 고른 식품명 (예: `"배추_생것"`). **화면에 기준으로 표시** |
+| `source`, `reference_date` | string | 출처 기관, 데이터 기준일 |
 
 ### Season
 

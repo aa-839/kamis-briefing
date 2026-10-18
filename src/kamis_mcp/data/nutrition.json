@@ -1,0 +1,1111 @@
+{
+ "dataset": "공공데이터포털 전국통합식품영양성분정보(원재료성식품) 표준데이터",
+ "items": {
+  "쌀(20kg)": {
+   "food_name": "멥쌀_백미_생것",
+   "food_code": "R101-008000301-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "366",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "6.81",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.9",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "0.00",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "88",
+     "unit": "mg"
+    }
+   }
+  },
+  "감자": {
+   "food_name": "감자_수미_생것",
+   "food_code": "R102-001140001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "70",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.93",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.7",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "4.47",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "335",
+     "unit": "mg"
+    }
+   }
+  },
+  "고구마": {
+   "food_name": "고구마_분질(밤) 고구마_생것",
+   "food_code": "R102-006150001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "154",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.01",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.7",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "7.12",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "370",
+     "unit": "mg"
+    }
+   }
+  },
+  "배추": {
+   "food_name": "배추_생것",
+   "food_code": "R106-087000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "15",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.25",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.3",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "15.13",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "262",
+     "unit": "mg"
+    }
+   }
+  },
+  "양배추": {
+   "food_name": "양배추_생것",
+   "food_code": "R106-129000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "29",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.36",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.5",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "28.79",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "252",
+     "unit": "mg"
+    }
+   }
+  },
+  "무": {
+   "food_name": "무_조선무_뿌리_생것",
+   "food_code": "R106-065027601-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "21",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "0.77",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.1",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "11.89",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "279",
+     "unit": "mg"
+    }
+   }
+  },
+  "대파": {
+   "food_name": "파_대파_생것",
+   "food_code": "R106-191040001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "23",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.78",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.6",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "3.55",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "181",
+     "unit": "mg"
+    }
+   }
+  },
+  "양파": {
+   "food_name": "양파_생것",
+   "food_code": "R106-132000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "29",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "0.96",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.6",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "4.93",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "148",
+     "unit": "mg"
+    }
+   }
+  },
+  "깐마늘": {
+   "food_name": "마늘_구근_생것",
+   "food_code": "R106-053002201-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "128",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "7.45",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "3.8",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "8.45",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "531",
+     "unit": "mg"
+    }
+   }
+  },
+  "오이": {
+   "food_name": "오이_개량종_생것",
+   "food_code": "R106-148010001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "14",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.22",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "0.7",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "11.25",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "196",
+     "unit": "mg"
+    }
+   }
+  },
+  "애호박": {
+   "food_name": "호박_애호박_생것",
+   "food_code": "R106-198050001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "22",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.07",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.2",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "3.11",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "224",
+     "unit": "mg"
+    }
+   }
+  },
+  "시금치": {
+   "food_name": "시금치_생것",
+   "food_code": "R106-115000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "29",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "3.35",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "3.1",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "51.12",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "691",
+     "unit": "mg"
+    }
+   }
+  },
+  "상추": {
+   "food_name": "상추_잎상추_적상추_생것",
+   "food_code": "R106-101173701-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "19",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.42",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.7",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "0.17",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "488",
+     "unit": "mg"
+    }
+   }
+  },
+  "풋고추": {
+   "food_name": "고추_풋고추_생것",
+   "food_code": "R106-018003101-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "29",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.71",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "4.4",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "43.95",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "270",
+     "unit": "mg"
+    }
+   }
+  },
+  "당근": {
+   "food_name": "당근_뿌리_생것",
+   "food_code": "R106-041007601-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "31",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.02",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "3.1",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "3.02",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "299",
+     "unit": "mg"
+    }
+   }
+  },
+  "토마토": {
+   "food_name": "토마토_생것",
+   "food_code": "R106-186000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "19",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.03",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.6",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "14.16",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "250",
+     "unit": "mg"
+    }
+   }
+  },
+  "사과": {
+   "food_name": "사과_생것",
+   "food_code": "R108-050000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "57",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "0.20",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.0",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "1.32",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "111",
+     "unit": "mg"
+    }
+   }
+  },
+  "배(신고)": {
+   "food_name": "배_신고_생것",
+   "food_code": "R108-038040001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "46",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "0.30",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.3",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "2.76",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "128",
+     "unit": "mg"
+    }
+   }
+  },
+  "감귤": {
+   "food_name": "귤_온주밀감_생것",
+   "food_code": "R108-010020001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "39",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "0.53",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "1.6",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "30.69",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "101",
+     "unit": "mg"
+    }
+   }
+  },
+  "바나나": {
+   "food_name": "바나나_생것",
+   "food_code": "R108-037000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "77",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "1.11",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "2.2",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "6.60",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "355",
+     "unit": "mg"
+    }
+   }
+  },
+  "돼지 삼겹살": {
+   "food_name": "돼지고기_삼겹살_생것",
+   "food_code": "R209-014006601-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "372",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "13.90",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "0.0",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "0.59",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "239",
+     "unit": "mg"
+    }
+   }
+  },
+  "계란(특란 30구)": {
+   "food_name": "달걀_생것",
+   "food_code": "R210-003000001-0000",
+   "base": "100g",
+   "source": "농촌진흥청(국가표준식품성분표)",
+   "reference_date": "2025-12-23",
+   "values": {
+    "열량": {
+     "value": "136",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "12.91",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "0.0",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "0.00",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "127",
+     "unit": "mg"
+    }
+   }
+  },
+  "고등어": {
+   "food_name": "고등어류_고등어_육_생것_부산_평균",
+   "food_code": "R211-021014001-1208",
+   "base": "100g",
+   "source": "국립수산과학원(표준수산물성분표)",
+   "reference_date": "2026-01-13",
+   "values": {
+    "열량": {
+     "value": "183",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "20.20",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": "0.0",
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": "1.00",
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": null,
+     "unit": "mg"
+    }
+   },
+   "monthly": {
+    "6": {
+     "food_name": "고등어류_고등어_육_생것_대표_6월",
+     "food_code": "R211-021014001-0006",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "159",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "23.57",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "8": {
+     "food_name": "고등어류_고등어_육_생것_대표_8월",
+     "food_code": "R211-021014001-0008",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "121",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "23.06",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "10": {
+     "food_name": "고등어류_고등어_육_생것_대표_10월",
+     "food_code": "R211-021014001-0010",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "140",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "21.90",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": "249",
+       "unit": "mg"
+      }
+     }
+    }
+   }
+  },
+  "오징어": {
+   "food_name": "오징어류_살오징어_몸통_생것_부산_6월",
+   "food_code": "R211-667094801-1201",
+   "base": "100g",
+   "source": "국립수산과학원(표준수산물성분표)",
+   "reference_date": "2026-01-13",
+   "values": {
+    "열량": {
+     "value": "87",
+     "unit": "kcal"
+    },
+    "단백질": {
+     "value": "17.63",
+     "unit": "g"
+    },
+    "식이섬유": {
+     "value": null,
+     "unit": "g"
+    },
+    "비타민C": {
+     "value": null,
+     "unit": "mg"
+    },
+    "칼륨": {
+     "value": "199",
+     "unit": "mg"
+    }
+   },
+   "monthly": {
+    "1": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_1월",
+     "food_code": "R211-667092701-0001",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "97",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "19.26",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "2": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_2월",
+     "food_code": "R211-667092701-0002",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "99",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "20.18",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "3": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_3월",
+     "food_code": "R211-667092701-0003",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "94",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "18.26",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "4": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_4월",
+     "food_code": "R211-667092701-0004",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "95",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "19.05",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "5": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_5월",
+     "food_code": "R211-667092701-0005",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "98",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "19.58",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "6": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_6월",
+     "food_code": "R211-667092701-0006",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "88",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "18.10",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "7": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_7월",
+     "food_code": "R211-667092701-0007",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "90",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "19.03",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "8": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_8월",
+     "food_code": "R211-667092701-0008",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "91",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "17.72",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "10": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_10월",
+     "food_code": "R211-667092701-0010",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "89",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "18.37",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "11": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_11월",
+     "food_code": "R211-667092701-0011",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "92",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "18.15",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    },
+    "12": {
+     "food_name": "오징어류_살오징어_수컷,전체_생것_대표_12월",
+     "food_code": "R211-667092701-0012",
+     "base": "100g",
+     "source": "국립수산과학원(표준수산물성분표)",
+     "reference_date": "2026-01-13",
+     "values": {
+      "열량": {
+       "value": "104",
+       "unit": "kcal"
+      },
+      "단백질": {
+       "value": "18.64",
+       "unit": "g"
+      },
+      "식이섬유": {
+       "value": null,
+       "unit": "g"
+      },
+      "비타민C": {
+       "value": null,
+       "unit": "mg"
+      },
+      "칼륨": {
+       "value": null,
+       "unit": "mg"
+      }
+     }
+    }
+   }
+  }
+ }
+}
