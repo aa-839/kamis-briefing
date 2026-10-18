@@ -118,8 +118,7 @@ class KamisClient:
             body = resp.json()  # charset=utf-8로 온다(실제 응답 헤더 확인)
         except ValueError:
             # 정상이면 항상 JSON. 웹페이지가 오면 차단·점검 안내일 가능성이 크다(예: 해외 IP 차단)
-            snippet = resp.text[:120].replace("
-", " ")
+            snippet = " ".join(resp.text[:120].split())
             raise KamisError("NOJSON", action, f"JSON이 아닌 응답(HTTP {resp.status_code}): {snippet}")
         code = _error_code(body)
         if code and code != "000":

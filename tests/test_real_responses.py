@@ -111,3 +111,15 @@ def test_missing_env_names_the_variable(monkeypatch):
     monkeypatch.delenv("KAMIS_CERT_ID", raising=False)
     with pytest.raises(KamisError, match="KAMIS_CERT_ID"):
         run(KamisClient(cert_key=" key \n").daily_by_category("200", day=FRIDAY))
+
+
+def test_html_response_is_reported():
+    """차단 안내 같은 웹페이지가 오면 무슨 내용인지 보여 준다."""
+    import httpx
+
+    from kamis_mcp.client import KamisClient
+
+    html = httpx.MockTransport(lambda req: httpx.Response(200, text="<html>\n접근이 차단되었습니다</html>"))
+    with pytest.raises(KamisError, match="접근이 차단") as e:
+        run(KamisClient(cert_key="k", cert_id="i", transport=html).daily_by_category("200", day=FRIDAY))
+    assert e.value.code == "NOJSON"
