@@ -60,6 +60,10 @@ function safeDataBase(value) {
 function renderBriefing(b) {
   document.title = `${longDate(b.date)} 장바구니 물가 · 오늘의 장바구니 물가`;
   $('#mock-banner').hidden = !b.is_mock;
+  // 소급 생성: 그날 발행한 게 아니라 나중에 과거 KAMIS 데이터로 만든 브리핑임을 숨기지 않는다
+  const backfill = $('#backfill-badge');
+  backfill.hidden = !b.backfilled;
+  if (b.backfilled) backfill.textContent = `소급 생성 · ${b.generated_at.slice(0, 10)}에 과거 데이터로 작성`;
 
   setTime($('#briefing-date'), b.date, longDate(b.date));
   $('#headline').textContent = b.headline;
@@ -375,6 +379,12 @@ function renderArchive(entries, currentDate) {
       const headline = document.createElement('span');
       headline.textContent = e.headline;
       a.append(time, headline);
+      if (e.backfilled) {
+        const tag = document.createElement('span');
+        tag.className = 'backfill-badge';
+        tag.textContent = '소급 생성';
+        time.after(' ', tag);
+      }
       li.append(a);
       return li;
     }),

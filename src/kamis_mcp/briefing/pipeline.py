@@ -151,7 +151,7 @@ def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, s
 
 async def build_briefing(client, writer: Writer, day: date, is_mock: bool = False,
                          skip_dates: set[str] = frozenset(), cause_finder=None,
-                         seasonal_cache: Path | None = None) -> dict | None:
+                         seasonal_cache: Path | None = None, backfilled: bool = False) -> dict | None:
     """day 기준 가장 최근 조사일의 브리핑. 그 조사일이 skip_dates에 있으면(이미 발행) None."""
     survey_day, facts, missing = await _find_survey_day(client, day)
     if survey_day.isoformat() in skip_dates:
@@ -191,6 +191,8 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "schema_version": SCHEMA_VERSION,
         # 가짜 데이터로 만든 브리핑. 실제 발행·보고서에 절대 쓰지 말 것(허위 기재는 실격).
         "is_mock": is_mock,
+        # 소급 생성: 그날 발행한 것이 아니라 나중에 과거 데이터로 만든 브리핑. 화면에 그렇게 밝힌다
+        "backfilled": backfilled,
         # 브리핑 날짜 = 조사일. 주말·공휴일이나 하루 여러 번 실행해도 같은 조사일은 한 파일로 덮어쓴다
         "date": survey_day.isoformat(),
         "survey_date": survey_dates[-1] if survey_dates else None,
@@ -235,6 +237,8 @@ def publish(briefing: dict, out_dir: Path) -> Path:
         "headline": briefing["headline"],
         "verified": briefing["verification"]["passed"],
         "is_mock": briefing["is_mock"],
+        "backfilled": briefing.get("backfilled", False),
+        "generated_at": briefing["generated_at"],
         "file": path.name,
     })
     index["briefings"] = sorted(entries, key=lambda e: e["date"], reverse=True)
@@ -254,7 +258,7 @@ async def _run(args) -> None:
     skip = {p.stem for p in out.glob("????-??-??.json")} if args.skip_existing else set()
     try:
         briefing = await build_briefing(client, writer, day, is_mock=args.mock, skip_dates=skip, cause_finder=finder,
-                                        seasonal_cache=out / "seasonal")
+                                        seasonal_cache=out / "seasonal", backfilled=args.backfill)
     finally:
         await client.aclose()
     if briefing is None:
@@ -280,6 +284,8 @@ def main() -> None:
     p.add_argument("--date", help="YYYY-MM-DD (기본: 오늘)")
     p.add_argument("--out", default="briefings", help="출력 폴더 (기본: briefings)")
     p.add_argument("--writer", choices=["llm", "template"], default="llm", help="문장 작성 방식 (기본: llm)")
+    p.add_argument("--backfill", action="store_true",
+                   help="지난 날짜를 나중에 만드는 소급 생성. 브리핑과 목록에 '소급 생성'으로 표시된다")
     p.add_argument("--no-causes", action="store_true", help="원인 찾기(뉴스 검색) 생략")
     p.add_argument("--skip-existing", action="store_true",
                    help="가장 최근 조사일 브리핑이 출력 폴더에 이미 있으면 만들지 않음 (자동 실행용)")

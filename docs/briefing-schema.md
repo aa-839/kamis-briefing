@@ -7,7 +7,7 @@
 ```json
 {
   "briefings": [
-    { "date": "2026-10-13", "headline": "…", "verified": true, "is_mock": false, "file": "2026-10-13.json" }
+    { "date": "2026-10-13", "headline": "…", "verified": true, "is_mock": false, "backfilled": false, "generated_at": "…", "file": "2026-10-13.json" }
   ],
   "updated_at": "2026-10-13T09:05:12+09:00"
 }
@@ -19,6 +19,7 @@
 |---|---|---|
 | `schema_version` | number | 형식이 바뀌면 올라감. 현재 `1` |
 | `is_mock` | boolean | `true`면 가짜 데이터. 화면에 "샘플" 표시 권장 |
+| `backfilled` | boolean | `true`면 그날 발행한 것이 아니라 나중에(`generated_at`) 과거 KAMIS 데이터로 만든 소급 생성. 화면에 '소급 생성'으로 표시 |
 | `date` | `"YYYY-MM-DD"` | 브리핑 날짜 = 가격 조사일. 파일 이름도 이 날짜 |
 | `survey_date` | `"YYYY-MM-DD"` \| null | KAMIS 가격 조사일. 출처 표기에 사용 |
 | `generated_at` | ISO 8601 | 생성 시각 |

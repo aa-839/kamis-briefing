@@ -423,6 +423,18 @@ main { padding-block: 24px 64px; outline: none; }
 .how-log__list strong { color: var(--brand); }
 .how-log__list q { color: var(--text-muted); font-size: 0.8125rem; }
 
+/* 소급 생성 표시 */
+.backfill-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
 /* ---------- 지난 브리핑 ---------- */
 .archive-list { display: grid; gap: 8px; }
 .archive-list a {
