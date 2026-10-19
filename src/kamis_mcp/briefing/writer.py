@@ -10,7 +10,7 @@ Writer는 select() 결과를 받아 headline과 품목별 comment를 돌려준�
 from datetime import date, timedelta
 from typing import Protocol
 
-from .facts import ItemFact
+from .facts import ItemFact, year_level
 
 
 class Writer(Protocol):
@@ -50,7 +50,9 @@ class TemplateWriter:
         parts = []
         if falling:
             f = falling[0]
-            parts.append(f"{josa(f.label, '이/가')} {since_1w(f)} {pct(f.change_1w_pct)} 내렸고")
+            head = f"{josa(f.label, '이/가')} {since_1w(f)} {pct(f.change_1w_pct)}"
+            level = year_level(f.year_cheaper_pct)  # 지난주 대비만으로는 정말 싼지 몰라서 1년 위치를 함께 말한다
+            parts.append(f"{head} 내려 최근 1년 중 {level}이고" if level else f"{head} 내렸고")
         if rising:
             f = rising[0]
             same_base = falling and since_1w(falling[0]) == since_1w(f)
@@ -59,7 +61,7 @@ class TemplateWriter:
             parts.append(f"{subject} {when}{pct(f.change_1w_pct)} 올랐습니다")
         headline = ", ".join(parts) + "." if parts else "이번 주는 크게 움직인 품목이 없습니다."
         if falling and not rising:
-            headline = headline.replace("내렸고.", "내렸습니다.")
+            headline = headline.replace("내렸고.", "내렸습니다.").replace("편이고.", "편입니다.")
 
         comments = {}
         for f in rising + falling:

@@ -55,7 +55,7 @@ def test_check_rejects_paraphrase_other_item_wrong_direction_and_unsupported_sum
     assert "기사 제목" in check_extraction(e, [up_title], cucumber)
 
     invented = GOOD.model_copy(update={"summary": "이상기후로 작황 부진"})
-    assert "summary" in check_extraction(invented, [ARTICLE], CABBAGE)
+    assert "요약" in check_extraction(invented, [ARTICLE], CABBAGE)
 
 
 class FakeSearch:

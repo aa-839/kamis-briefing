@@ -165,7 +165,16 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
     candidates += select(facts)["rising"]
     series = await _year_series_many(client, candidates, survey_day)
     positions = {f.label: year_position(series[f.label], f.price) for f in candidates}
+    for f in candidates:
+        if positions[f.label]:
+            f.year_cheaper_pct = positions[f.label]["cheaper_days_pct"]
     selection = select(facts, positions)
+    # 1주 동안 내렸지만 1년 기준으로 싸지 않아 '사기 좋은 품목'에서 뺀 품목(예: 토마토). 화면의 검증 기록에 보인다
+    excluded = [
+        {"item": f.label, "change_1w_pct": f.change_1w_pct, "cheaper_days_pct": f.year_cheaper_pct,
+         "vs_normal_pct": f.vs_normal_pct}
+        for f in select(facts)["falling"] if f not in selection["falling"]
+    ]  # fmt: skip
     written = writer.write(selection)
     check = verify(written, selection)
     comments = written["comments"]
@@ -208,6 +217,7 @@ async def build_briefing(client, writer: Writer, day: date, is_mock: bool = Fals
         "writing": getattr(writer, "last_run", None) or None,
         # 원인 찾기 기록: 몇 품목을 찾아 몇 개를 실었고, 무엇을 왜 탈락시켰는지
         "cause_search": cause_log,
+        "excluded_good_buys": excluded,
         "source": SOURCE,
     }
 

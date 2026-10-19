@@ -37,6 +37,7 @@ class ItemFact:
     change_1m_pct: float | None
     change_1y_pct: float | None
     vs_normal_pct: float | None
+    year_cheaper_pct: int | None = None  # 최근 1년 중 오늘보다 싼 날의 비율(%). 1년 위치를 계산한 품목만
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -101,6 +102,14 @@ def set_1w_base(f: ItemFact, price: float, base_date: str) -> None:
     f.price_1w_ago = price
     f.base_1w_date = base_date
     f.change_1w_pct = pct_change(f.price, price)
+
+
+def year_level(cheaper_days_pct: int | None) -> str | None:
+    """최근 1년 중 위치를 말로. 화면·문장이 같은 기준을 쓰도록 한곳에 둔다."""
+    if cheaper_days_pct is None:
+        return None
+    p = cheaper_days_pct
+    return "매우 싼 편" if p <= 20 else "싼 편" if p <= 50 else "비싼 편" if p <= 80 else "매우 비싼 편"
 
 
 def good_buy(f: ItemFact, position: dict | None) -> bool:

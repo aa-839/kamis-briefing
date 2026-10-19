@@ -1,4 +1,4 @@
-// 최근 1년 가격을 작은 선 그래프(스파크라인)로 그린다. 라이브러리 없이 SVG path만 쓴다.
+// 최근 가격 흐름(최대 1년)을 작은 선 그래프(스파크라인)로 그린다. 라이브러리 없이 SVG path만 쓴다.
 // 점선은 1년 평균: 지금 가격이 평균보다 위인지 아래인지 한눈에 보이게.
 
 import { won, shortDate } from './format.js';
@@ -24,6 +24,7 @@ export function drawSparkline(svg, series, name, year = null) {
   const prices = series.map((p) => p.price);
   const min = Math.min(...prices);
   const max = Math.max(...prices);
+  const avg = year?.avg ?? prices.reduce((a, b) => a + b, 0) / prices.length; // 1년 요약이 없는 옛 브리핑도 평균선
   const range = max - min || 1; // 가격이 내내 같으면 0으로 나누지 않게
 
   const x = (i) => (i / (series.length - 1)) * W;
@@ -41,10 +42,10 @@ export function drawSparkline(svg, series, name, year = null) {
   svg.querySelector('title').textContent =
     `${name} 가격 추이: ${shortDate(first.date)} ${won(first.price)}에서 ` +
     `${shortDate(last.date)} ${won(last.price)}. 최저 ${won(min)}, 최고 ${won(max)}` +
-    (year ? `, 평균 ${won(year.avg)}.` : '.');
+    `, 평균 ${won(avg)}.`;
 
   const paths = [['spark__area', area], ['spark__line', line]];
-  if (year) paths.push(['spark__avg', `M0,${y(year.avg).toFixed(1)}L${W},${y(year.avg).toFixed(1)}`]);
+  if (avg) paths.push(['spark__avg', `M0,${y(avg).toFixed(1)}L${W},${y(avg).toFixed(1)}`]);
   for (const [cls, d] of paths) {
     const path = document.createElementNS(SVG_NS, 'path'); // SVG 요소는 createElement가 아니라 NS 버전으로
     path.setAttribute('class', cls);

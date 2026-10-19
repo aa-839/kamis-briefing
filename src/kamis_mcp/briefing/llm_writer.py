@@ -19,7 +19,7 @@ from typing import TypedDict
 from langgraph.graph import END, START, StateGraph
 from pydantic import BaseModel, Field
 
-from .facts import ItemFact
+from .facts import ItemFact, year_level
 from .verify import verify
 from .writer import TemplateWriter, since_1w
 
@@ -39,6 +39,8 @@ SYSTEM_PROMPT = """당신은 소비자를 위한 '오늘의 장바구니 물가'
 - 헤드라인에서 숫자를 말할 때는 그 숫자 바로 앞에 해당 품목 이름을 씁니다.
 
 내용 규칙
+- '최근1년_중_위치'가 있으면 **가장 먼저** 말합니다(예: '최근 1년 중 싼 편'). 이 위치에는 숫자를 붙이지 않고 표현 그대로 씁니다.
+  지난주 대비 변동만으로는 정말 싼 때인지 알 수 없어서, 1년 기준이 이 브리핑의 핵심입니다.
 - 1주 변동은 각 품목의 '1주_비교' 표현을 그대로 씁니다(예: '일주일 새', '10월 8일보다').
 - 가격이 오르거나 내린 '이유'는 쓰지 않습니다. 날씨·작황 등 원인은 데이터에 없습니다.
 - 1주 변동과 평년·작년 비교가 반대 방향이면 '~지만', '아직' 등으로 자연스럽게 잇습니다.
@@ -87,6 +89,7 @@ def facts_for_prompt(selection: dict[str, list[ItemFact]]) -> str:
             "label": f.label, "품종": f.kind_name, "단위": f.unit, "오늘_가격": f.price,
             "1주_비교": since_1w(f), "1주_변동률": f.change_1w_pct,
             "1년전_대비": f.change_1y_pct, "평년_대비": f.vs_normal_pct,
+            "최근1년_중_위치": year_level(f.year_cheaper_pct),
         }  # fmt: skip
 
     payload = {

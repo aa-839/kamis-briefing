@@ -321,6 +321,9 @@ main { padding-block: 24px 64px; outline: none; }
 .spark__area { fill: var(--brand); stroke: none; opacity: 0.1; }
 .spark__avg { fill: none; stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
 .spark__caption { font-size: 0.75rem; color: var(--text-muted); }
+.card__year { font-size: 0.9375rem; }
+.card__year .year-level { font-size: 1.0625rem; }
+.card__year-detail { font-size: 0.8125rem; color: var(--text-muted); }
 .year-level--low { color: var(--down); }
 .year-level--high { color: var(--up); }
 
@@ -396,6 +399,29 @@ main { padding-block: 24px 64px; outline: none; }
   vertical-align: 2px;
   cursor: help;
 }
+
+/* ---------- 검증 기록 ---------- */
+.how-steps { display: grid; gap: 8px; counter-reset: step; font-size: 0.9375rem; }
+.how-steps li { counter-increment: step; display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; }
+.how-steps li::before {
+  content: counter(step);
+  display: inline-grid; place-items: center;
+  width: 1.5em; height: 1.5em; border-radius: 50%;
+  background: var(--brand); color: var(--surface);
+  font-size: 0.8125rem; font-weight: 700;
+}
+.how-steps strong { margin-right: 6px; }
+.how-log {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.how-log h3 { font-size: 0.9375rem; margin-bottom: 10px; }
+.how-log__list { display: grid; gap: 10px; font-size: 0.875rem; }
+.how-log__list strong { color: var(--brand); }
+.how-log__list q { color: var(--text-muted); font-size: 0.8125rem; }
 
 /* ---------- 지난 브리핑 ---------- */
 .archive-list { display: grid; gap: 8px; }

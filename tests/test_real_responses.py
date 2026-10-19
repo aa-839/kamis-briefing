@@ -132,3 +132,12 @@ def test_good_buys_are_cheap_on_a_one_year_view(kamis):
         assert item["change_1w_pct"] <= -3
         assert item["year"]["cheaper_days_pct"] <= 50, item["item"]
         assert len(b["history"][item["item"]]) >= 60  # 1년치 그래프
+
+
+def test_tomato_is_recorded_as_excluded_good_buy(kamis):
+    """10/16 토마토: 지난주보다 9.7% 내렸지만 최근 1년 중 비싼 편이라 추천하지 않고, 그 사실을 기록한다."""
+    b = run(build_briefing(kamis, TemplateWriter(), date(2026, 10, 18)))
+    excluded = {e["item"]: e for e in b["excluded_good_buys"]}
+    assert "토마토" in excluded and excluded["토마토"]["cheaper_days_pct"] > 50
+    assert "토마토" not in {i["item"] for i in b["sections"]["falling"]}
+    assert "최근 1년 중" in b["headline"]  # 사기 좋은 품목은 1년 위치를 먼저 말한다

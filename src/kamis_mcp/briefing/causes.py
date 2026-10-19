@@ -180,9 +180,9 @@ def origin_mismatch(quote: str, f: ItemFact) -> str | None:
     """
     kind, name = f.kind_name or "", re.escape(_name(f))
     if "국산" in kind and re.search(rf"수입(산)?\s*{name}", quote):
-        return f"품종은 국산인데 quote는 수입산 {_name(f)} 이야기"
+        return f"품종은 국산인데 인용문은 수입산 {_name(f)} 이야기"
     if "수입" in kind and re.search(rf"국산\s*{name}", quote):
-        return f"품종은 수입산인데 quote는 국산 {_name(f)} 이야기"
+        return f"품종은 수입산인데 인용문은 국산 {_name(f)} 이야기"
     return None
 
 
@@ -193,23 +193,23 @@ def check_extraction(e: Extraction, sources: list[Source], f: ItemFact) -> str |
     src = sources[e.source_index]
     quote = _norm(e.quote).strip(QUOTE_STRIP)
     if not quote or len(quote) > MAX_QUOTE_CHARS:
-        return f"quote가 비었거나 {MAX_QUOTE_CHARS}자를 넘음"
+        return f"인용문이 비었거나 {MAX_QUOTE_CHARS}자를 넘음"
     if quote not in _norm(src.text):
-        return "quote가 기사 본문에 그대로 있지 않음(글자를 바꾸거나 요약함)"
+        return "인용문이 기사 본문에 그대로 있지 않음(글자를 바꾸거나 요약함)"
     if not (mentions_item(quote, _name(f)) or mentions_item(src.title, _name(f))):
-        return f"quote와 기사 제목에 '{_name(f)}'가 없음(다른 품목 이야기일 수 있음, 예: 방울토마토)"
+        return f"인용문과 기사 제목에 '{_name(f)}'가 없음(다른 품목 이야기일 수 있음, 예: 방울토마토)"
     if not CAUSE_WORDS.search(quote):
-        return "quote에 수급을 말하는 낱말(출하·작황·수요·날씨 등)이 없음(원인이 아니라 설명일 수 있음)"
+        return "인용문에 수급을 말하는 낱말(출하·작황·수요·날씨 등)이 없음(원인이 아니라 설명일 수 있음)"
     if problem := origin_mismatch(quote, f):
         return problem
     move = 1 if f.change_1w_pct > 0 else -1
-    for where, said in (("quote", _direction(quote) or overall_direction(quote)),
+    for where, said in (("인용문", _direction(quote) or overall_direction(quote)),
                         ("기사 제목", overall_direction(src.title))):
         if said and said != move:
             return f"{where}는 가격이 {'오른' if said > 0 else '내린'} 이야기인데 실제로는 {'올랐음' if move > 0 else '내렸음'}"
     words = re.findall(r"[가-힣A-Za-z]{2,}", e.summary)
     if not words or sum(w[:2] in quote for w in words) < (len(words) + 1) // 2:
-        return "summary의 낱말 대부분이 quote에 없음(인용에 없는 원인을 덧붙임)"
+        return "요약의 낱말 대부분이 인용문에 없음(인용에 없는 원인을 덧붙임)"
     return None
 
 

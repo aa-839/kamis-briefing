@@ -72,12 +72,66 @@ function renderBriefing(b) {
   renderChips($('#expensive-list'), b.sections.vs_normal.expensive);
   renderChips($('#cheap-list'), b.sections.vs_normal.cheap);
   renderTable(b.items, b.survey_date);
+  renderHowLog(b);
 
   const missing = $('#missing-note');
   missing.hidden = !b.missing?.length;
   missing.textContent = `오늘 조사되지 않은 품목: ${b.missing?.join(', ')}`;
 
   $('#briefing').hidden = false;
+}
+
+/**
+ * 오늘의 검증 기록: 숫자 대조 결과, 1년 기준으로 뺀 품목, 걸러낸 원인 근거와 그 이유.
+ * 이 브리핑의 가장 중요한 부분(AI가 틀린 것을 내보내지 않은 증거)이라 화면에 그대로 보여 준다.
+ */
+function renderHowLog(b) {
+  const lines = [];
+  const add = (strong, text, quote) => {
+    const li = document.createElement('li');
+    const s = document.createElement('strong');
+    s.textContent = strong;
+    li.append(s, ` ${text}`);
+    if (quote) {
+      const q = document.createElement('q');
+      q.textContent = quote.length > 70 ? `${quote.slice(0, 70)}…` : quote;
+      li.append(document.createElement('br'), q);
+    }
+    lines.push(li);
+  };
+
+  const v = b.verification;
+  const w = b.writing;
+  let wrote = 'AI 없이 정해진 문장으로 썼어요.';
+  if (w) {
+    wrote = w.fallback
+      ? 'AI 문장이 끝내 검증을 통과하지 못해 정해진 문장으로 냈어요.'
+      : w.rewrites
+        ? `AI가 처음 쓴 문장이 검증에 걸려 ${w.rewrites}번 다시 썼어요.`
+        : 'AI가 쓴 문장이 한 번에 통과했어요.';
+  }
+  add('숫자 대조', `문장 속 숫자 ${v.checked}개 중 ${v.matched}개가 KAMIS 원본과 일치. ${wrote}`);
+
+  for (const e of b.excluded_good_buys ?? []) {
+    const why = e.cheaper_days_pct != null
+      ? `최근 1년 중 비싼 편(오늘보다 싼 날 ${e.cheaper_days_pct}%)이라`
+      : '평년보다 싸지 않아';
+    add('사기 좋은 품목에서 뺌', `${e.item}: 지난주보다 ${Math.abs(e.change_1w_pct).toFixed(1)}% 내렸지만 ${why} 추천하지 않았어요.`);
+  }
+
+  const c = b.cause_search;
+  if (c) {
+    add('원인 근거', `${c.searched}개 품목의 기사를 찾아 ${c.found}개 품목만 원인을 실었어요. 아래 근거는 검사에서 걸러냈어요.`);
+    const seen = new Set();
+    for (const r of c.rejected ?? []) {
+      const key = `${r.item}|${r.reason}`;
+      if (seen.has(key) || seen.size >= 8) continue;
+      seen.add(key);
+      const who = r.by === 'grade' ? 'AI 심사' : '코드 검사';
+      add(`걸러냄 · ${r.item}`, `(${who}) ${r.reason}`, r.quote);
+    }
+  }
+  $('#how-log').replaceChildren(...lines);
 }
 
 function renderBadge(v) {
@@ -106,8 +160,9 @@ function renderCards(list, items, history, surveyDate) {
 
       const base = movedBase(item.base_1w_date, surveyDate);
       fillChange(card.querySelector('.card__change'), item.change_1w_pct, base ? `${base.long}보다` : '1주 전보다', base);
+      fillYear(card.querySelector('.card__year'), item.year);
       drawSparkline(card.querySelector('.spark__svg'), history?.[item.item], item.item, item.year);
-      fillYear(card.querySelector('.spark__caption'), item.year);
+      fillSparkCaption(card.querySelector('.spark__caption'), history?.[item.item], item.year);
       card.querySelector('.card__comment').textContent = item.comment ?? '';
       fillNutrition(card.querySelector('.nutri'), item.nutrition);
       fillCause(card.querySelector('.cause'), item.cause);
@@ -118,23 +173,33 @@ function renderCards(list, items, history, surveyDate) {
 }
 
 /**
- * '최근 1년 중 위치'. cheaper_days_pct = 최근 1년 중 오늘보다 싼 날의 비율.
- * 1주 변동만 보면 '싸 보이는 착시'가 생겨서, 1년 기준으로 정말 싼지 함께 보여 준다.
+ * '최근 1년 중 위치' — 카드에서 가격 바로 아래, 가장 먼저 보이게.
+ * cheaper_days_pct = 최근 1년 중 오늘보다 싼 날의 비율. 등급 기준은 파이썬 facts.year_level과 같다.
  */
-function fillYear(caption, year) {
-  if (!year) {
-    caption.textContent = '최근 1년';
-    return;
-  }
+function fillYear(el, year) {
+  if (!year) return;
   const p = year.cheaper_days_pct;
   const level = p <= 20 ? '매우 싼 편' : p <= 50 ? '싼 편' : p <= 80 ? '비싼 편' : '매우 비싼 편';
   const strong = document.createElement('strong');
   strong.className = `year-level year-level--${p <= 50 ? 'low' : 'high'}`;
   strong.textContent = level;
-  caption.replaceChildren(
-    '최근 1년 중 ', strong,
-    ` · 오늘보다 싼 날 ${p}% · 1년 평균 ${won(year.avg)} (점선)`,
-  );
+  const detail = document.createElement('span');
+  detail.className = 'card__year-detail';
+  detail.textContent = `오늘보다 싼 날 ${p}%`;
+  el.replaceChildren('최근 1년 중 ', strong, ' ', detail);
+  el.hidden = false;
+}
+
+/**
+ * 그래프 설명: 고정 문구 대신 실제로 그린 데이터의 기간·조사일 수를 쓴다.
+ * (데이터가 30일치인데 '최근 1년'이라고 쓰면 검증을 내세우는 페이지가 스스로 틀린 말을 하게 된다)
+ */
+function fillSparkCaption(caption, series, year) {
+  if (!series || series.length < 2) return;
+  const ym = (iso) => `${iso.slice(0, 4)}.${Number(iso.slice(5, 7))}월`;
+  const avg = year?.avg ?? series.reduce((sum, p) => sum + p.price, 0) / series.length;
+  caption.textContent =
+    `${ym(series[0].date)}~${ym(series.at(-1).date)} · 조사 ${series.length}일 · 평균 ${won(avg)}(점선)`;
 }
 
 /** 영양성분 100g당. 값은 성분표 원본 그대로 보여 주고, 어떤 식품 항목 기준인지 밝힌다. */

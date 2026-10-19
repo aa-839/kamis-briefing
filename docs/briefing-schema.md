@@ -35,6 +35,7 @@
 | `writing` | object \| null | LLM 작성 기록 `{model, rewrites, fallback, error?}`. `rewrites`=검증 실패로 다시 쓴 횟수, `fallback`=끝내 실패해 템플릿 문장으로 대체됐는지. 템플릿만 쓴 날은 `null` |
 | `source` | string | 출처 문구. 화면에 그대로 표기 |
 | `cause_search` | object \| null | 원인 찾기 기록 `{model, searched, found, rejected[], errors[]}`. `rejected`는 탈락한 인용과 이유 |
+| `excluded_good_buys` | `{item, change_1w_pct, cheaper_days_pct, vs_normal_pct}`[] | 1주 동안 내렸지만 1년 기준으로 싸지 않아 '사기 좋은 품목'에서 뺀 품목. 화면 검증 기록에 표시 |
 
 ### Item
 
