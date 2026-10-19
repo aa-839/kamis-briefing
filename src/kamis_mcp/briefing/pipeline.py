@@ -32,7 +32,8 @@ SCHEMA_VERSION = 1
 YEAR_DAYS = 364  # 그래프·'1년 중 위치'에 쓰는 기간. KAMIS 일별 API는 최근 1년까지만 조회된다
 MIN_YEAR_POINTS = 60  # 조사된 날이 이보다 적으면 1년 중 위치를 판단하지 않는다
 SURVEY_LOOKBACK_DAYS = 7  # 오늘 조사가 없으면(주말·공휴일·아직 미발표) 며칠 전까지 거슬러 찾을지
-MIN_COVERAGE = len(BASKET) // 2  # 토요일엔 축산물만 조사돼서, 절반 이상 있어야 '조사일'로 본다
+MIN_COVERAGE = len(BASKET) // 2
+FATAL_KAMIS_CODES = {"900", "NOJSON"}  # 기다려도 해결되지 않는 오류: 바로 멈춘다  # 토요일엔 축산물만 조사돼서, 절반 이상 있어야 '조사일'로 본다
 SOURCE = "KAMIS 소매가격(전국 평균)"
 
 
@@ -111,9 +112,12 @@ async def _fill_1w_gaps(client, facts: list[ItemFact]) -> None:
 async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], list[str]]:
     """day부터 거슬러 올라가며 장바구니 절반 이상이 조사된 가장 최근 날을 찾는다.
 
-    001(데이터 없음)은 주말·공휴일에 정상이라 넘어가지만, 인증 실패(900) 같은 오류는 바로 멈춘다.
-    오류를 삼키면 '가격이 없습니다'만 남아 진짜 원인을 알 수 없게 된다.
+    - 인증 실패(900)·JSON이 아닌 응답은 설정·접속 문제라 바로 멈춘다.
+    - 그 밖의 코드(001 데이터 없음, 200 등)는 '그날 자료가 아직 없음'으로 보고 전날로 넘어간다.
+      실제로 당일 가격이 올라오기 전 시각에 실행이 멈춘 적이 있다(2026-10-19 13시·18시).
+    - 끝내 못 찾으면 날짜별로 받은 코드를 전부 적어 실패한다. 오류를 삼켜 원인을 감추지 않기 위해서다.
     """
+    seen: dict[str, set[str]] = {}
     for back in range(SURVEY_LOOKBACK_DAYS + 1):
         d = day - timedelta(days=back)
         rows_by_category = {}
@@ -121,13 +125,16 @@ async def _find_survey_day(client, day: date) -> tuple[date, list[ItemFact], lis
             try:
                 rows_by_category[cat] = await client.daily_by_category(cat, "retail", None, d)
             except KamisError as e:
-                if e.code != "001":
+                if e.code in FATAL_KAMIS_CODES:
                     raise
+                seen.setdefault(d.isoformat(), set()).add(e.code)
                 rows_by_category[cat] = []
         facts, missing = build_facts(rows_by_category)
         if len(facts) >= MIN_COVERAGE:
             return d, facts, missing
-    raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 조사된 가격이 없습니다(KAMIS 응답: 데이터 없음).")
+        seen.setdefault(d.isoformat(), set()).add(f"조사 {len(facts)}개")
+    detail = ", ".join(f"{d}: {'/'.join(sorted(c))}" for d, c in seen.items())
+    raise RuntimeError(f"{day} 이전 {SURVEY_LOOKBACK_DAYS}일 동안 장바구니 절반 이상이 조사된 날이 없습니다 ({detail})")
 
 
 def _section_item(f: ItemFact, comment: str | None, cause: dict | None = None, season: dict | None = None,

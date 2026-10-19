@@ -141,3 +141,22 @@ def test_tomato_is_recorded_as_excluded_good_buy(kamis):
     assert "토마토" in excluded and excluded["토마토"]["cheaper_days_pct"] > 50
     assert "토마토" not in {i["item"] for i in b["sections"]["falling"]}
     assert "최근 1년 중" in b["headline"]  # 사기 좋은 품목은 1년 위치를 먼저 말한다
+
+
+def test_not_yet_published_day_falls_back_instead_of_failing(kamis):
+    """당일 가격이 아직 없을 때 KAMIS가 001이 아닌 코드를 줘도 전날 조사분으로 넘어간다."""
+    import httpx
+
+    from conftest import FixtureTransport
+    from kamis_mcp.client import KamisClient
+
+    real = FixtureTransport()
+
+    async def handler(request):
+        if request.url.params.get("p_regday") == "2026-10-19":
+            return httpx.Response(200, json={"data": ["200"]})  # 아직 안 올라온 날
+        return await real.handle_async_request(request)
+
+    client = KamisClient(cert_key="k", cert_id="i", transport=httpx.MockTransport(handler))
+    b = run(build_briefing(client, TemplateWriter(), date(2026, 10, 19)))
+    assert b["survey_date"] == "2026-10-16"

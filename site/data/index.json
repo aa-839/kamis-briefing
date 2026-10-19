@@ -5,6 +5,8 @@
       "headline": "시금치 13.9% 내리고 양배추 16.9% 올랐습니다",
       "verified": true,
       "is_mock": false,
+      "backfilled": false,
+      "generated_at": "2026-10-18T19:08:34+09:00",
       "file": "2026-10-16.json"
     },
     {
