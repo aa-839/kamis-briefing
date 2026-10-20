@@ -6,7 +6,7 @@
       "verified": true,
       "is_mock": false,
       "backfilled": false,
-      "generated_at": "2026-10-20T21:37:47+09:00",
+      "generated_at": "2026-10-20T22:24:21+09:00",
       "file": "2026-10-20.json"
     },
     {
@@ -100,5 +100,5 @@
       "file": "2026-10-01.json"
     }
   ],
-  "updated_at": "2026-10-20T21:37:47+09:00"
+  "updated_at": "2026-10-20T22:24:21+09:00"
 }
