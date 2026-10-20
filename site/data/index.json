@@ -1,6 +1,15 @@
 {
   "briefings": [
     {
+      "date": "2026-10-20",
+      "headline": "오이 13.9% 내리고 양배추 15.8% 올랐습니다",
+      "verified": true,
+      "is_mock": false,
+      "backfilled": false,
+      "generated_at": "2026-10-20T21:37:47+09:00",
+      "file": "2026-10-20.json"
+    },
+    {
       "date": "2026-10-16",
       "headline": "시금치 13.9% 내리고 양배추 16.9% 올랐습니다",
       "verified": true,
@@ -91,5 +100,5 @@
       "file": "2026-10-01.json"
     }
   ],
-  "updated_at": "2026-10-19T23:41:55+09:00"
+  "updated_at": "2026-10-20T21:37:47+09:00"
 }
