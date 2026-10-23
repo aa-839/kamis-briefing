@@ -1,6 +1,15 @@
 {
   "briefings": [
     {
+      "date": "2026-10-23",
+      "headline": "최근 1년 중 싼 편인 토마토 19.8% 내리고, 오징어 20.6% 올랐습니다",
+      "verified": true,
+      "is_mock": false,
+      "backfilled": false,
+      "generated_at": "2026-10-23T21:34:29+09:00",
+      "file": "2026-10-23.json"
+    },
+    {
       "date": "2026-10-22",
       "headline": "최근 1년 중 싼 편인 배추 17.5% 내리고, 풋고추 9.3% 올랐습니다",
       "verified": true,
@@ -118,5 +127,5 @@
       "file": "2026-10-01.json"
     }
   ],
-  "updated_at": "2026-10-22T21:38:38+09:00"
+  "updated_at": "2026-10-23T21:34:29+09:00"
 }
