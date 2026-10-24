@@ -11,6 +11,7 @@
 - monthlySalesList는 error_code가 data 안이 아니라 최상위에 온다.
 """
 
+import asyncio
 import os
 import re
 from datetime import date
@@ -26,6 +27,11 @@ ERROR_MESSAGES = {
     "900": "인증되지 않은 요청입니다(API 키 확인 필요)",
     "NOJSON": "KAMIS가 데이터 대신 다른 응답을 보냈습니다",
 }
+
+# 서버가 잠깐 거절·지연할 때 다시 시도한다. 실제로 아침 실행이 406, ConnectTimeout으로 실패한 적이 있다
+# (같은 요청이 그날 저녁엔 성공). 인증 실패(900) 같은 오류 코드는 다시 시도해도 같아서 대상이 아니다.
+RETRY_STATUS = {406, 429, 500, 502, 503, 504}
+RETRY_WAITS = (5, 20, 60)  # 초. 시도 사이 대기 시간(점점 길게)
 
 # 일별 데이터 API는 오늘 기준 최근 1년까지만 조회된다(API 문서).
 DAILY_LOOKBACK_DAYS = 365
@@ -95,7 +101,12 @@ class KamisClient:
         self.cert_key = (cert_key or os.environ.get("KAMIS_CERT_KEY") or "").strip() or None
         self.cert_id = (cert_id or os.environ.get("KAMIS_CERT_ID") or "").strip() or None
         # transport: 테스트에서 저장해 둔 실제 응답을 돌려주는 가짜 네트워크를 끼울 때 쓴다
-        self._http = httpx.AsyncClient(timeout=timeout, headers={"User-Agent": "kamis-mcp/0.1"}, transport=transport)
+        headers = {
+            "User-Agent": "kamis-briefing/0.1 (+https://github.com/aa-839/kamis-briefing)",
+            "Accept": "application/json, text/plain, */*",  # 406(받을 수 있는 형식 불일치)을 피하려고 명시
+        }
+        self._http = httpx.AsyncClient(timeout=timeout, headers=headers, transport=transport)
+        self.retry_waits = RETRY_WAITS  # 테스트에서는 0으로 바꿔 기다리지 않는다
 
     async def aclose(self) -> None:
         await self._http.aclose()
@@ -112,8 +123,7 @@ class KamisClient:
             "p_returntype": "json",
             **{k: v for k, v in params.items() if v is not None},
         }
-        resp = await self._http.get(BASE_URL, params=query)
-        resp.raise_for_status()
+        resp = await self._get_with_retry(query)
         try:
             body = resp.json()  # charset=utf-8로 온다(실제 응답 헤더 확인)
         except ValueError:
@@ -124,6 +134,22 @@ class KamisClient:
         if code and code != "000":
             raise KamisError(code, action)
         return body
+
+    async def _get_with_retry(self, query: dict) -> httpx.Response:
+        """일시적 오류(연결 실패·시간 초과·406·429·5xx)는 기다렸다 다시 시도. 끝내 실패하면 마지막 오류를 그대로 낸다."""
+        for attempt in range(len(self.retry_waits) + 1):
+            last = attempt == len(self.retry_waits)
+            try:
+                resp = await self._http.get(BASE_URL, params=query)
+            except httpx.TransportError:  # ConnectTimeout, ReadTimeout, 연결 끊김 등
+                if last:
+                    raise
+            else:
+                if resp.status_code not in RETRY_STATUS or last:
+                    resp.raise_for_status()
+                    return resp
+            await asyncio.sleep(self.retry_waits[attempt])
+        raise AssertionError("unreachable")
 
     # --- action별 래퍼 -------------------------------------------------------
 

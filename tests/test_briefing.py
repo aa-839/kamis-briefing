@@ -108,3 +108,15 @@ def test_falling_item_must_also_be_cheap_on_one_year_view():
     assert [f.label for f in select([a, b])["falling"]] == ["a", "b"]  # 1년 정보가 없으면 기존 기준
     no_year = fact("c", w=-5.0, normal=12.0)  # 1년 자료가 모자라면 평년보다 싼지로 판단
     assert select([no_year], {"c": None})["falling"] == []
+
+
+def test_style_rules_send_long_or_unformatted_headlines_back_for_rewrite():
+    pear = fact("배(신고)", price=25660.0, w=-17.9)
+    sel = {"rising": [], "falling": [pear], "expensive": [], "cheap": []}
+    ok = verify({"headline": "배(신고)가 일주일 새 17.9% 내렸습니다.", "comments": {}}, sel)
+    assert ok["passed"]
+    long = verify({"headline": "최근 1년 중 매우 싼 편인 배(신고) 10개 25,660원 17.9% 내리고 그 밖에도 여러 품목이 크게 움직였습니다",
+                   "comments": {}}, sel)
+    assert not long["passed"] and "60자" in long["failures"][-1]["reason"]
+    no_comma = verify({"headline": "배(신고) 25660원, 17.9% 내렸습니다.", "comments": {}}, sel)
+    assert not no_comma["passed"] and no_comma["checked"] == 2  # 숫자 대조 개수에는 섞지 않는다

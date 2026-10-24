@@ -140,7 +140,8 @@ function renderHowLog(b) {
 
 function renderBadge(v) {
   const badge = $('#verify-badge');
-  if (v.passed) {
+  // 배지는 숫자 대조 결과만 말한다(헤드라인 길이 같은 형식 규칙은 사실 여부와 무관)
+  if (v.matched === v.checked) {
     badge.textContent = `✅ 숫자 ${v.checked}개 원본 대조 완료`;
     badge.title = '문장 속 가격과 변동률을 KAMIS 원본 데이터와 자동으로 대조했습니다.';
   } else {

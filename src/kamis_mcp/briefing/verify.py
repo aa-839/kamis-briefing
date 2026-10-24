@@ -107,6 +107,24 @@ def check_text(text: str, facts: list[ItemFact]) -> list[dict]:
     return results
 
 
+HEADLINE_MAX_CHARS = 60
+UNFORMATTED_PRICE_RE = re.compile(r"(?<![\d,])\d{4,}\s*원")  # 1,000원 이상인데 쉼표 없음(예: 25660원)
+
+
+def style_problems(written: dict) -> list[dict]:
+    """형식 규칙. 숫자는 맞아도 읽기 어려운 문장을 걸러 재작성하게 한다(프롬프트로 부탁해도 모델이 안 지킨 날이 있었다)."""
+    problems = []
+    headline = written["headline"]
+    if len(headline) > HEADLINE_MAX_CHARS:
+        problems.append({"where": "headline", "text": f"{len(headline)}자", "ok": False,
+                         "reason": f"헤드라인이 {HEADLINE_MAX_CHARS}자를 넘음. 가격·단위는 빼고 짧게"})
+    for where, text in [("headline", headline), *written["comments"].items()]:
+        for m in UNFORMATTED_PRICE_RE.finditer(text):
+            problems.append({"where": where, "text": m.group(0), "ok": False,
+                             "reason": "가격에 천 단위 쉼표가 없음(예: 25,660원)"})
+    return problems
+
+
 def verify(written: dict, selection: dict[str, list[ItemFact]]) -> dict:
     shown = {f.label: f for key in ("rising", "falling", "expensive", "cheap") for f in selection[key]}
     checks = [{"where": "headline", **c} for c in check_text(written["headline"], list(shown.values()))]
@@ -118,4 +136,7 @@ def verify(written: dict, selection: dict[str, list[ItemFact]]) -> dict:
             continue
         checks.extend({"where": label, **c} for c in check_text(comment, [fact]))
     failed = [c for c in checks if not c["ok"]]
-    return {"checked": len(checks), "matched": len(checks) - len(failed), "passed": not failed, "failures": failed}
+    style = style_problems(written)
+    # checked·matched는 숫자 대조 결과만 센다(화면의 '숫자 N개 원본 대조'). 형식 문제는 통과 여부와 재작성 사유에만 쓴다
+    return {"checked": len(checks), "matched": len(checks) - len(failed), "passed": not failed and not style,
+            "failures": failed + style}
