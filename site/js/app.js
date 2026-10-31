@@ -108,7 +108,9 @@ function renderHowLog(b) {
   const w = b.writing;
   let wrote = 'AI 없이 정해진 문장으로 썼어요.';
   if (w) {
-    wrote = w.fallback
+    wrote = w.error
+      ? 'AI 호출이 실패해(서비스 오류) 정해진 문장으로 냈어요.'
+      : w.fallback
       ? 'AI 문장이 끝내 검증을 통과하지 못해 정해진 문장으로 냈어요.'
       : w.rewrites
         ? `AI가 처음 쓴 문장이 검증에 걸려 ${w.rewrites}번 다시 썼어요.`
