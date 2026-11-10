@@ -1,6 +1,15 @@
 {
   "briefings": [
     {
+      "date": "2026-11-10",
+      "headline": "최근 1년 중 매우 싼 편인 배추 27.2% 내리고, 오이 29.5% 올랐습니다",
+      "verified": true,
+      "is_mock": false,
+      "backfilled": false,
+      "generated_at": "2026-11-10T21:58:48+09:00",
+      "file": "2026-11-10.json"
+    },
+    {
       "date": "2026-11-09",
       "headline": "최근 1년 중 매우 싼 편 배추 25.8% 내리고, 오이 30.3% 올랐습니다",
       "verified": true,
@@ -235,5 +244,5 @@
       "file": "2026-10-01.json"
     }
   ],
-  "updated_at": "2026-11-09T22:04:57+09:00"
+  "updated_at": "2026-11-10T21:58:48+09:00"
 }
