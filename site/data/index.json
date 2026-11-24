@@ -1,6 +1,15 @@
 {
   "briefings": [
     {
+      "date": "2026-11-24",
+      "headline": "애호박 19.1% 내리고 깐마늘 16.3% 올랐습니다",
+      "verified": true,
+      "is_mock": false,
+      "backfilled": false,
+      "generated_at": "2026-11-24T19:32:18+09:00",
+      "file": "2026-11-24.json"
+    },
+    {
       "date": "2026-11-23",
       "headline": "최근 1년 중 싼 편인 애호박 19.2% 내리고, 비싼 편인 깐마늘 17.2% 올랐습니다",
       "verified": true,
@@ -280,5 +289,5 @@
       "file": "2026-10-01.json"
     }
   ],
-  "updated_at": "2026-11-23T17:23:57+09:00"
+  "updated_at": "2026-11-24T19:32:18+09:00"
 }
