@@ -1,6 +1,15 @@
 {
   "briefings": [
     {
+      "date": "2026-11-26",
+      "headline": "최근 1년 중 싼 편인 양파 9.1% 내리고 배추 12.6% 올랐습니다",
+      "verified": true,
+      "is_mock": false,
+      "backfilled": false,
+      "generated_at": "2026-11-26T18:00:12+09:00",
+      "file": "2026-11-26.json"
+    },
+    {
       "date": "2026-11-25",
       "headline": "최근 1년 중 싼 편인 애호박 17.3% 내리고, 비싼 편인 깐마늘 14.9% 올랐습니다",
       "verified": true,
@@ -298,5 +307,5 @@
       "file": "2026-10-01.json"
     }
   ],
-  "updated_at": "2026-11-25T18:20:43+09:00"
+  "updated_at": "2026-11-26T18:00:12+09:00"
 }
